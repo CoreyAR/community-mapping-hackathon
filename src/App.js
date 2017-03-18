@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjwreFxybyROvLmpKPZWPF83NtqrSowZwgkh7eP4dycFeb9rfO" className="App-logo" alt="logo" />
+          <h2>Immigrant Support System</h2>
         </div>
         <RootMap />
       </div>
