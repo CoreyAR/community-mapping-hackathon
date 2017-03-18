@@ -7,7 +7,10 @@ import parksData from '../Data/parks'
 var _RootMap = React.createClass({
   getInitialState () {
     return {
-      activeMarker: null
+      activeMarker: null,
+      lat: 36.1639,
+      lng: -86.7817,
+      internationalGrocery: []
     }
   },
 
@@ -20,18 +23,15 @@ var _RootMap = React.createClass({
 
   fetchPlaces: function(mapProps, map) {
     const {google} = this.props;
-    const request = {query: 'international grocery store'}
+    let location = new google.maps.LatLng(this.state.lat, this.state.lng);
+    const request = {query: 'world international market grocery store', location}
     const service = new google.maps.places.PlacesService(map)
-    service.textSearch(request, this.callback);
-  },
-
-  callback(results, status) {
-  if (status === this.props.google.maps.places.PlacesServiceStatus.OK) {
-    for (var i = 0; i < results.length; i++) {
-      var place = results[i];
-      console.log(results[i]);
+    service.textSearch(request, (results, status) => { 
+      if  (status === this.props.google.maps.places.PlacesServiceStatus.OK) {
+        console.log(results)
+        this.setState({internationalGrocery: results})
       }
-    }
+    })
   },
 
   onMarkerClick: function (props, marker, e) {
@@ -57,7 +57,7 @@ var _RootMap = React.createClass({
         onReady={this.fetchPlaces}
         google={this.props.google}
         zoom={16}
-        initialCenter={{lat: 36.1639,lng: -86.7817}}
+        initialCenter={{lat: this.state.lat,lng: this.state.lng}}
         center={null}
         mapStyles={mapStyles}
         mapTypeId={'satellite'}
@@ -77,6 +77,18 @@ var _RootMap = React.createClass({
               key={Math.random()}
               position={{lat: parseFloat(p.mapped_location[1]), lng: parseFloat(p.mapped_location[2])}}
               onClick={this.onMarkerClick}
+             />
+            )
+          })
+        }
+        {
+          this.state.internationalGrocery.map((groc, i) => {
+            console.log(groc.geometry.location)
+            return (
+              <Marker
+                key={Math.random()}
+                position={{lat: groc.geometry.location.lat, lng: groc.geometry.locations.lng}}
+                onClick={this.onMarkerClick}
              />
             )
           })
