@@ -24,7 +24,7 @@ const evtNames = ['ready', 'click', 'dragend', 'recenter']
 export {wrapper as GoogleApiWrapper} from './GoogleApiComponent'
 export {Marker} from './Marker'
 export {InfoWindow} from './InfoWindow'
-// export {GroundOverlay} from './GroundOverlay'
+export {HeatmapOverlay} from './Heatmap'
 // export { Polygon } from './Polygon'
 // export { Label } from './Label'
 
