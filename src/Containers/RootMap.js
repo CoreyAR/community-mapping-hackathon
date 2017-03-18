@@ -1,10 +1,14 @@
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, InfoWindow} from '../Components/Map'
+import Map, {GoogleApiWrapper, Marker, InfoWindow, HeatmapOverlay} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
+// Data sets
 import parksData from '../Data/parks'
+import bustStopData from '../Data/bus-stop'
+// Marker Logos
 import parksMarker from '../Images/park-marker.png'
 import globeMarker from '../Images/globe.png'
+import busMarker from '../Images/bus_pointer.png'
 
 var _RootMap = React.createClass({
   getInitialState () {
@@ -58,11 +62,10 @@ var _RootMap = React.createClass({
         style={style}
         onReady={this.fetchPlaces}
         google={this.props.google}
-        zoom={16}
+        zoom={14}
         initialCenter={{lat: this.state.lat,lng: this.state.lng}}
         center={null}
         mapStyles={mapStyles}
-        mapTypeId={'satellite'}
       >
         <InfoWindow
           marker={this.state.activeMarker}
@@ -97,6 +100,20 @@ var _RootMap = React.createClass({
             )
           })
         }
+        {
+          bustStopData.map((b, i) => {
+            return (
+              <Marker
+                key={Math.random()}
+                position={{lat: b.mapped_location.latitude , lng: b.mapped_location.longitude}}
+                onClick={this.onMarkerClick}
+                icon={busMarker}
+              />
+            )            
+          })
+        }
+        <HeatmapOverlay
+        />
       </Map>
     )
   }
