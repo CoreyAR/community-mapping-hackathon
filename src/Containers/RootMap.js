@@ -3,6 +3,8 @@ import {API_KEY} from './../env'
 import Map, {GoogleApiWrapper, Marker, InfoWindow} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
 import parksData from '../Data/parks'
+import parksMarker from '../Images/park-marker.png'
+import globeMarker from '../Images/globe.png'
 
 var _RootMap = React.createClass({
   getInitialState () {
@@ -77,24 +79,25 @@ var _RootMap = React.createClass({
               key={Math.random()}
               position={{lat: parseFloat(p.mapped_location[1]), lng: parseFloat(p.mapped_location[2])}}
               onClick={this.onMarkerClick}
+              icon={parksMarker}
              />
             )
           })
         }
         {
           this.state.internationalGrocery.map((groc, i) => {
-            console.log(groc.geometry.location)
+            console.log(groc.geometry.location.lat())
             return (
               <Marker
                 key={Math.random()}
-                position={{lat: groc.geometry.location.lat, lng: groc.geometry.locations.lng}}
+                position={{lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()}}
                 onClick={this.onMarkerClick}
+                icon={globeMarker}
              />
             )
           })
         }
       </Map>
-
     )
   }
 })
