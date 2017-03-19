@@ -24,9 +24,7 @@ const evtNames = ['ready', 'click', 'dragend', 'recenter']
 export {wrapper as GoogleApiWrapper} from './GoogleApiComponent'
 export {Marker} from './Marker'
 export {InfoWindow} from './InfoWindow'
-// export {GroundOverlay} from './GroundOverlay'
-// export { Polygon } from './Polygon'
-// export { Label } from './Label'
+export {HeatmapOverlay} from './Heatmap'
 
 export class Map extends React.Component {
   constructor (props) {
@@ -159,7 +157,6 @@ export class Map extends React.Component {
       if (!(center instanceof google.maps.LatLng)) {
         center = new google.maps.LatLng(center.lat, center.lng)
       }
-          // map.panTo(center)
       map.setCenter(center)
       maps.event.trigger(map, 'recenter')
     }

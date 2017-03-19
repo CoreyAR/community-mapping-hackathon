@@ -3,20 +3,17 @@ import React from 'react'
 import {ScriptCache} from './lib/ScriptCache'
 import GoogleApi from './lib/GoogleApi'
 
-// const defaultMapConfig = {}
 const defaultCreateCache = (options) => {
   options = options || {}
   const apiKey = options.apiKey
-  // const libraries = options.libraries || ['places'];
+  const libraries = ['places',  'visualization']
 
   return ScriptCache({
-    google: GoogleApi({apiKey: apiKey, libraries: []})
+    google: GoogleApi({apiKey: apiKey, libraries})
   })
 }
 
 export const wrapper = (options) => (WrappedComponent) => {
-  // const apiKey = options.apiKey
-    // const libraries = options.libraries || ['places'];
   const createCache = options.createCache || defaultCreateCache
 
   class Wrapper extends React.Component {
