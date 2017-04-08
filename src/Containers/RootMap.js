@@ -1,6 +1,6 @@
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, InfoWindow, HeatmapOverlay} from '../Components/Map'
+import Map, {GoogleApiWrapper, Marker, InfoWindow, HeatmapOverlay, FusionTable} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../Data/parks'
@@ -62,7 +62,7 @@ var _RootMap = React.createClass({
         style={style}
         onReady={this.fetchPlaces}
         google={this.props.google}
-        zoom={14}
+        zoom={10}
         initialCenter={{lat: this.state.lat,lng: this.state.lng}}
         center={null}
         mapStyles={mapStyles}
@@ -75,43 +75,8 @@ var _RootMap = React.createClass({
           <div>
           </div>
           </InfoWindow>
-        {
-          parksData.map((p, i) => {
-            return (
-             <Marker
-              key={Math.random()}
-              position={{lat: parseFloat(p.mapped_location[1]), lng: parseFloat(p.mapped_location[2])}}
-              onClick={this.onMarkerClick}
-              icon={parksMarker}
-             />
-            )
-          })
-        }
-        {
-          this.state.internationalGrocery.map((groc, i) => {
-            console.log(groc.geometry.location.lat())
-            return (
-              <Marker
-                key={Math.random()}
-                position={{lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()}}
-                onClick={this.onMarkerClick}
-                icon={globeMarker}
-             />
-            )
-          })
-        }
-        {
-          bustStopData.map((b, i) => {
-            return (
-              <Marker
-                key={Math.random()}
-                position={{lat: b.mapped_location.latitude , lng: b.mapped_location.longitude}}
-                onClick={this.onMarkerClick}
-                icon={busMarker}
-              />
-            )            
-          })
-        }
+          <FusionTable
+          />
         <HeatmapOverlay
         />
       </Map>

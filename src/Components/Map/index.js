@@ -25,6 +25,7 @@ export {wrapper as GoogleApiWrapper} from './GoogleApiComponent'
 export {Marker} from './Marker'
 export {InfoWindow} from './InfoWindow'
 export {HeatmapOverlay} from './Heatmap'
+export {FusionTable} from './FusionTable'
 // export { Polygon } from './Polygon'
 // export { Label } from './Label'
 
