@@ -1,8 +1,6 @@
 import React from 'react'
 import {API_KEY} from './../env'
-
 import Map, {GoogleApiWrapper, Marker, InfoWindow, HeatmapOverlay, FusionTable} from '../Components/Map'
-import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, FusionTable} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../Data/parks'
@@ -82,7 +80,10 @@ var _RootMap = React.createClass({
           />
         <HeatmapOverlay
         />
-        <FusionTable />
+
+        <FusionTable
+        />
+
       </Map>
     )
   }

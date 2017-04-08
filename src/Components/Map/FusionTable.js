@@ -17,10 +17,20 @@ const wrappedPromise = function () {
 }
 
 export class FusionTable extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      points: []
+    }
+  }
+
+  componentDidUpdate () {
+    this.renderFusionTable()
+  }
 
   componentDidMount () {
     this.fusionTablePromise = wrappedPromise()
-    this.renderFusionTable()
+    // this.renderFusionTable()
   }
 
   componentWillUnmount () {
@@ -29,35 +39,42 @@ export class FusionTable extends React.Component {
     }
   }
 
-  getPoints () {
-    return []
-  }
-
   renderFusionTable () {
     let {
-      map, google, imageBounds, image
+      map, google,
+
     } = this.props
     if (!google) {
       return null
     }
 
-  // let pos = position || mapCenter;
-    // if (!(pos instanceof google.maps.LatLng)) {
-    //   position = new google.maps.LatLng(pos.lat, pos.lng);
-    // }
-
     const pref = {
-      map: map,
-      imageBounds: imageBounds,
-      image: image
+      map: map
     }
     this.fusionTable = new google.maps.FusionTablesLayer({
           query: {
-            select: '\'geometry\'',
-            from: '1fWfM5sv8K0Dvkq--Yzwwj2zClVRefqh6gnGiyg'
-          }
+            select: 'geometry',
+            from: '1ertEwm-1bMBhpEwHhtNYT47HQ9k2ki_6sRa-UQ'
+          },
+          styles: [{
+            polygonOptions: {
+              fillColor: '#00FF00',
+              fillOpacity: 0.3
+            }
+          }, {
+            where: 'birds > 300',
+            polygonOptions: {
+              fillColor: '#0000FF'
+            }
+          }, {
+            where: 'population > 5',
+            polygonOptions: {
+              fillOpacity: 1.0
+            }
+          }]
         });
-    // new google.maps.FusionTable(pref.image, pref.imageBounds)
+
+
     this.fusionTable.setMap(pref.map)
 
     evtNames.forEach(e => {

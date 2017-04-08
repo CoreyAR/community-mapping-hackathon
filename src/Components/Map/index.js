@@ -28,7 +28,6 @@ export {HeatmapOverlay} from './Heatmap'
 export {FusionTable} from './FusionTable'
 
 
-
 export class Map extends React.Component {
   constructor (props) {
     super(props)
