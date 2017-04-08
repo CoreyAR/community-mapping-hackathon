@@ -54,7 +54,7 @@ export class FusionTable extends React.Component {
     this.fusionTable = new google.maps.FusionTablesLayer({
           query: {
             select: 'geometry',
-            from: '1ertEwm-1bMBhpEwHhtNYT47HQ9k2ki_6sRa-UQ'
+            from: '1fWfM5sv8K0Dvkq--Yzwwj2zClVRefqh6gnGiyg'
           },
           styles: [{
             polygonOptions: {
