@@ -41,10 +41,10 @@ export class FusionTable extends React.Component {
 
   renderFusionTable () {
     let {
-      map, google,
+      map, google, year
 
     } = this.props
-    if (!google) {
+    if (!google || !year) {
       return null
     }
 
@@ -54,25 +54,40 @@ export class FusionTable extends React.Component {
     this.fusionTable = new google.maps.FusionTablesLayer({
           query: {
             select: 'geometry',
-            from: '1fWfM5sv8K0Dvkq--Yzwwj2zClVRefqh6gnGiyg'
+            from: this.props.from,
           },
           styles: [{
             polygonOptions: {
               fillColor: '#00FF00',
-              fillOpacity: 0.3
+              fillOpacity: 0.2
             }
-          }, {
-            where: 'birds > 300',
-            polygonOptions: {
-              fillColor: '#0000FF'
+            }, 
+            {
+              where: `${this.props.year} > 1000`,
+              polygonOptions: {
+                fillOpacity: 0.4
+              }
+            }, 
+            {
+              where: `${this.props.year} > 2000`,
+              polygonOptions: {
+                fillOpacity: 0.6
+              }
+            }, 
+            {
+              where: `${this.props.year} > 3000`,
+              polygonOptions: {
+                fillOpacity: 0.8
+              }
+            }, 
+            {
+              where: `${this.props.year} > 4000`,
+              polygonOptions: {
+                fillOpacity: 1.0
+              }
             }
-          }, {
-            where: 'population > 5',
-            polygonOptions: {
-              fillOpacity: 1.0
-            }
-          }]
-        });
+          ]
+        })
 
 
     this.fusionTable.setMap(pref.map)

@@ -8,7 +8,7 @@ const mapStyles = {
   container: {
     position: 'absolute',
     width: '100%',
-    height: 'calc(100% - 75px)'
+    height: 'calc(100% - 64px)'
   },
   map: {
     position: 'absolute',
