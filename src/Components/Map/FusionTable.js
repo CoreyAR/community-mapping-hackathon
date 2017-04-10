@@ -47,8 +47,6 @@ export class FusionTable extends React.Component {
       map, google, column, from
 
     } = this.props
-    console.log('from', from)
-    console.log(from)
     if (!google || !column) {
       return null
     }
