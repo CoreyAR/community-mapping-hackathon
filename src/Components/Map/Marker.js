@@ -17,7 +17,6 @@ const wrappedPromise = function () {
 }
 
 export class Marker extends React.Component {
-
   componentDidMount () {
     this.markerPromise = wrappedPromise()
     this.renderMarker()

@@ -2,23 +2,14 @@ import React from 'react'
 import {API_KEY} from './../env'
 import Map, {GoogleApiWrapper, FusionTable} from '../Components/Map'
 
-
-var _RootMap = React.createClass({
-  getInitialState () {
-    return {
-      activeMarker: null,
+class _RootMap extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
       lat: 36.1639,
-      lng: -86.7817,
-      internationalGrocery: []
+      lng: -86.7817
     }
-  },
-
-  componentWillReceiveProps (nextProps) {
-  },
-
-  componentDidUpdate(prevProps, prevState) {
-    
-  },
+  }
 
   render () {
     const style = {
@@ -38,18 +29,18 @@ var _RootMap = React.createClass({
         onReady={this.fetchPlaces}
         google={this.props.google}
         zoom={7}
-        initialCenter={{lat: this.state.lat,lng: this.state.lng}}
+        initialCenter={{lat: this.state.lat, lng: this.state.lng}}
         center={null}
       >
         <FusionTable
-          year={'twentyten'}
-          from={'1Xm8E2KTUGhDkcjBwmR63xxvEfPo2DD8woxsAHGoz'}
+          column={this.props.column}
+          from={this.props.from}
         />
 
       </Map>
     )
   }
-})
+}
 
 export default GoogleApiWrapper({
   apiKey: API_KEY, libraries: ['places']

@@ -2,7 +2,6 @@ import React, { PropTypes as T } from 'react'
 import ReactDOMServer from 'react-dom/server'
 
 export class InfoWindow extends React.Component {
-
   componentDidMount () {
     this.renderInfoWindow()
   }

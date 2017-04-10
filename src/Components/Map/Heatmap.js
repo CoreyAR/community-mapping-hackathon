@@ -17,7 +17,6 @@ const wrappedPromise = function () {
 }
 
 export class HeatmapOverlay extends React.Component {
-
   componentDidMount () {
     this.heatmapOverlayPromise = wrappedPromise()
     this.renderHeatmapOverlay()

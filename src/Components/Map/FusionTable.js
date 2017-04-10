@@ -17,7 +17,7 @@ const wrappedPromise = function () {
 }
 
 export class FusionTable extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       points: []
@@ -25,6 +25,9 @@ export class FusionTable extends React.Component {
   }
 
   componentDidUpdate () {
+    if (this.fusionTable) {
+      this.fusionTable.setMap(null)
+    }
     this.renderFusionTable()
   }
 
@@ -41,54 +44,86 @@ export class FusionTable extends React.Component {
 
   renderFusionTable () {
     let {
-      map, google, year
+      map, google, column, from
 
     } = this.props
-    if (!google || !year) {
+    console.log('from', from)
+    console.log(from)
+    if (!google || !column) {
       return null
     }
 
     const pref = {
       map: map
     }
-    this.fusionTable = new google.maps.FusionTablesLayer({
-          query: {
-            select: 'geometry',
-            from: this.props.from,
-          },
-          styles: [{
-            polygonOptions: {
-              fillColor: '#00FF00',
-              fillOpacity: 0.2
-            }
-            }, 
-            {
-              where: `${this.props.year} > 1000`,
-              polygonOptions: {
-                fillOpacity: 0.4
-              }
-            }, 
-            {
-              where: `${this.props.year} > 2000`,
-              polygonOptions: {
-                fillOpacity: 0.6
-              }
-            }, 
-            {
-              where: `${this.props.year} > 3000`,
-              polygonOptions: {
-                fillOpacity: 0.8
-              }
-            }, 
-            {
-              where: `${this.props.year} > 4000`,
-              polygonOptions: {
-                fillOpacity: 1.0
-              }
-            }
-          ]
-        })
 
+    this.fusionTable = new google.maps.FusionTablesLayer({
+      query: {
+        select: 'geometry',
+        from: from
+      },
+      styles: [{
+        polygonOptions: {
+          fillColor: '#1E88E5',
+          fillOpacity: 0.1
+        }
+      },
+      {
+        where: `${column} > 1000`,
+        polygonOptions: {
+          fillOpacity: 0.2
+        }
+      },
+      {
+        where: `${column} > 2000`,
+        polygonOptions: {
+          fillOpacity: 0.2
+        }
+      },
+      {
+        where: `${column} > 3000`,
+        polygonOptions: {
+          fillOpacity: 0.4
+        }
+      },
+      {
+        where: `${column} > 4000`,
+        polygonOptions: {
+          fillOpacity: 0.4
+        }
+      },
+      {
+        where: `${column} > 5000`,
+        polygonOptions: {
+          fillOpacity: 0.6
+        }
+      },
+      {
+        where: `${column} > 6000`,
+        polygonOptions: {
+          fillOpacity: 0.6
+        }
+      },
+      {
+        where: `${column} > 7000`,
+        polygonOptions: {
+          fillOpacity: 0.8
+        }
+      },
+      {
+        where: `${column} > 8000`,
+        polygonOptions: {
+          fillOpacity: 0.8
+        }
+      },
+      {
+        where: `${column} > 9000`,
+        polygonOptions: {
+          fillOpacity: 1.0
+        }
+      }
+      ]
+    })
 
     this.fusionTable.setMap(pref.map)
 

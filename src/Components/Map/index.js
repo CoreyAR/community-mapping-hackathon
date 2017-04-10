@@ -8,7 +8,7 @@ const mapStyles = {
   container: {
     position: 'absolute',
     width: '100%',
-    height: 'calc(100% - 64px)'
+    height: 'calc(100% - 128px)'
   },
   map: {
     position: 'absolute',
@@ -26,7 +26,6 @@ export {Marker} from './Marker'
 export {InfoWindow} from './InfoWindow'
 export {HeatmapOverlay} from './Heatmap'
 export {FusionTable} from './FusionTable'
-
 
 export class Map extends React.Component {
   constructor (props) {
