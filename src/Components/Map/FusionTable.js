@@ -69,55 +69,55 @@ export class FusionTable extends React.Component {
         }
       },
       {
-        where: `${column} > 1000`,
+        where: `${column} > 250`,
         polygonOptions: {
           fillOpacity: 0.2
+        }
+      },
+      {
+        where: `${column} > 500`,
+        polygonOptions: {
+          fillOpacity: 0.3
+        }
+      },
+      {
+        where: `${column} > 1000`,
+        polygonOptions: {
+          fillOpacity: 0.4
+        }
+      },
+      {
+        where: `${column} > 1500`,
+        polygonOptions: {
+          fillOpacity: 0.5
         }
       },
       {
         where: `${column} > 2000`,
         polygonOptions: {
-          fillOpacity: 0.2
+          fillOpacity: 0.6
+        }
+      },
+      {
+        where: `${column} > 2500`,
+        polygonOptions: {
+          fillOpacity: 0.7
         }
       },
       {
         where: `${column} > 3000`,
         polygonOptions: {
-          fillOpacity: 0.4
-        }
-      },
-      {
-        where: `${column} > 4000`,
-        polygonOptions: {
-          fillOpacity: 0.4
+          fillOpacity: 0.8
         }
       },
       {
         where: `${column} > 5000`,
         polygonOptions: {
-          fillOpacity: 0.6
-        }
-      },
-      {
-        where: `${column} > 6000`,
-        polygonOptions: {
-          fillOpacity: 0.6
+          fillOpacity: 0.9
         }
       },
       {
         where: `${column} > 7000`,
-        polygonOptions: {
-          fillOpacity: 0.8
-        }
-      },
-      {
-        where: `${column} > 8000`,
-        polygonOptions: {
-          fillOpacity: 0.8
-        }
-      },
-      {
-        where: `${column} > 9000`,
         polygonOptions: {
           fillOpacity: 1.0
         }
