@@ -6,8 +6,19 @@ import AppBar from 'material-ui/AppBar'
 import IconButton from 'material-ui/IconButton';
 import RootMap from './RootMap'
 import Slider from 'material-ui/Slider'
+import Avatar from 'material-ui/Avatar';
+import Chip from 'material-ui/Chip';
+import Paper from 'material-ui/Paper';
 import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar'
 import './Styles/App.css'
+
+const style = {
+  height: 32,
+  width: 32,
+  margin: 8,
+  textAlign: 'center',
+  display: 'inline-block',
+};
 
 class App extends Component {
 
@@ -77,6 +88,58 @@ class App extends Component {
               sliderStyle={{flex: 1, marginBottom: '24px', alignSelf: 'center'}}
               />
             {this.props.age}
+          </ToolbarGroup>
+          <ToolbarGroup>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .1)'}}
+            >
+              {'< 250'}
+            </Chip>            
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .2)'}}
+            >
+              {' < 500'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .3)'}}
+            >
+              {'< 1000'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .4)'}}
+            >
+              {'< 1500'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .5)'}}
+            >
+              {'< 2000'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .6)'}}
+            >
+              {'< 2050'}
+            </Chip>   
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .7)'}}
+            >
+              {'< 3000'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .8)'}}
+            >
+              {'< 5000'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, .9)'}}
+            >
+              {'< 7000'}
+            </Chip>
+            <Chip
+              style={{margin: 4, background: 'rgba(30, 136, 229, 1)'}}
+            >
+              {'> 7000'}
+            </Chip>          
           </ToolbarGroup>
         </Toolbar>
         <RootMap
