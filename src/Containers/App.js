@@ -15,7 +15,6 @@ class App extends Component {
     let fusionServices = new FusionServices(this.props.fusionType)
     let column = `${fusionServices.column(this.props.year)}`
     let from = `${fusionServices.from(this.props.age)}`
-    console.log('1', from)
     this.state = {
       column: `${column}`,
       from
@@ -24,9 +23,7 @@ class App extends Component {
 
   componentWillUpdate (nextProps, nextState) {
     if (this.props.year !== nextProps.year || this.props.age !== nextProps.age) {
-      console.log()
       let {age, year, fusionType} = nextProps
-      console.log('2', age, year)
       let fusionServices = new FusionServices(fusionType)
       this.setState({column: fusionServices.column(year)})
       this.setState({from: fusionServices.from(age)})
@@ -58,7 +55,7 @@ class App extends Component {
               step={1}
               defaultValue={2010}
               value={this.props.year}
-              onChange={this.handleYearSlider}
+              onChange={this.handleYearSlider.bind(this)}
               style={{flex: 2, alignSelf: 'center'}}
               sliderStyle={{flex: 2, marginBottom: '24px', alignSelf: 'center'}}
               />
@@ -73,7 +70,7 @@ class App extends Component {
               step={5}
               defaultValue={5}
               value={this.props.age}
-              onChange={this.handleAgeSlider}
+              onChange={this.handleAgeSlider.bind(this)}
               style={{flex: 1}}
               sliderStyle={{flex: 1, marginBottom: '24px', alignSelf: 'center'}}
               />
