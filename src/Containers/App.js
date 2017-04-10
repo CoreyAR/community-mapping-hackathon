@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import FusionActions from '../Redux/FusionRedux'
 import FusionServices from '../Services/FusionServices'
 import AppBar from 'material-ui/AppBar'
+import IconButton from 'material-ui/IconButton';
 import RootMap from './RootMap'
 import Slider from 'material-ui/Slider'
 import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar'
@@ -43,8 +44,9 @@ class App extends Component {
       <div className='App'>
         <AppBar
           title='TN Counties by Population Age'
+          // iconElementLeft={<FontIcon className="muidocs-icon-custom-github" />}
           iconStyleLeft={{display: 'none'}}
-          style={{display: 'absolute'}}
+          iconElementRight={<IconButton iconClassName="fa fa-github" color={'white'} href="https://github.com/CoreyAR/community-mapping-hackathon/tree/legal-hack"/>}
           />
         <Toolbar style={{disply: 'flex', justifyContent: 'space-around', flexDirection: 'row'}}>
           <ToolbarGroup style={{flex: 1, alignItems: 'center', flexDirection: 'row', justifyContent: 'center'}}>

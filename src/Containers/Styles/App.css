@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+.App {}
 
 .App-logo {
   /*background-image: url("")*/
@@ -22,3 +20,7 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }*/
+
+.muidocs-icon-custom-github:before {
+    content: "\e625";
+}
