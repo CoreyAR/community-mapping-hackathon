@@ -8,6 +8,7 @@ import mapStyles from './Styles/RootMapStyle'
 import parksData from '../data/parks'
 import bustStopData from '../data/bus-stop'
 import clinicData from '../data/clinics'
+
 // Marker Logos
 import parksMarker from '../images/park-marker.png'
 import globeMarker from '../images/globe.png'
