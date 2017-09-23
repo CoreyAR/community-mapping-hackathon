@@ -1,0 +1,312 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "xygh-inm9",
+      "name" : "Public Health Clinic Information",
+      "attribution" : "Metro Public Health Department",
+      "attributionLink" : "http://health.nashville.gov",
+      "averageRating" : 0,
+      "category" : "Medical",
+      "createdAt" : 1449699556,
+      "description" : "Names, addresses, phone numbers, and hours of public health clinics",
+      "displayType" : "table",
+      "downloadCount" : 77,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1477059401,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 17408501,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1454533993,
+      "publicationGroup" : 5942854,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1454533971,
+      "rowsUpdatedBy" : "6z6e-pe5v",
+      "tableId" : 7731324,
+      "totalTimesRated" : 0,
+      "viewCount" : 436,
+      "viewLastModified" : 1477059395,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 240909828,
+        "name" : "Clinic Name",
+        "dataTypeName" : "text",
+        "fieldName" : "clinic_name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33171095,
+        "width" : 232,
+        "cachedContents" : {
+          "non_null" : 4,
+          "largest" : "Woodbine Public Health Center",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Lentz Public Health Center",
+            "count" : 20
+          }, {
+            "item" : "East Public Health Center",
+            "count" : 19
+          }, {
+            "item" : "South Nashville WIC Nutrition Center (WIC Only)",
+            "count" : 18
+          }, {
+            "item" : "Woodbine Public Health Center",
+            "count" : 17
+          } ],
+          "smallest" : "East Public Health Center"
+        },
+        "format" : { }
+      }, {
+        "id" : 240909829,
+        "name" : "Phone",
+        "dataTypeName" : "text",
+        "fieldName" : "phone",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33171096,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 4,
+          "largest" : "(615) 880-3210",
+          "null" : 0,
+          "top" : [ {
+            "item" : "(615) 340-5616",
+            "count" : 20
+          }, {
+            "item" : "(615) 862-7916",
+            "count" : 19
+          }, {
+            "item" : "(615) 880-3210",
+            "count" : 18
+          }, {
+            "item" : "(615) 862-7940",
+            "count" : 17
+          } ],
+          "smallest" : "(615) 340-5616"
+        },
+        "format" : { }
+      }, {
+        "id" : 240909830,
+        "name" : "Hours",
+        "dataTypeName" : "text",
+        "fieldName" : "hours",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33171097,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 4,
+          "largest" : "Monday – Thursday  7:30 am – 6:00 pm",
+          "null" : 0,
+          "top" : [ {
+            "item" : "Monday - Friday 8:00 am until 4:30 pm",
+            "count" : 20
+          }, {
+            "item" : "Monday - Friday 7:30 am until 4:30 pm",
+            "count" : 19
+          }, {
+            "item" : "Monday – Thursday  7:30 am – 6:00 pm",
+            "count" : 18
+          }, {
+            "item" : "Monday - Friday 7:00 am until 4:30 pm",
+            "count" : 17
+          } ],
+          "smallest" : "Monday - Friday 7:00 am until 4:30 pm"
+        },
+        "format" : { }
+      }, {
+        "id" : 240909831,
+        "name" : "Location 1",
+        "dataTypeName" : "location",
+        "fieldName" : "location_1",
+        "position" : 5,
+        "renderTypeName" : "location",
+        "tableColumnId" : 33171098,
+        "width" : 220,
+        "cachedContents" : {
+          "non_null" : 4,
+          "largest" : {
+            "latitude" : "36.093667",
+            "human_address" : "{\"address\":\"3718 Nolensville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "longitude" : "-86.736409"
+          },
+          "null" : 0,
+          "top" : [ {
+            "item" : {
+              "latitude" : "36.155043",
+              "human_address" : "{\"address\":\"2500 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+              "longitude" : "-86.812991"
+            },
+            "count" : 20
+          }, {
+            "item" : {
+              "latitude" : "36.204273",
+              "human_address" : "{\"address\":\"1015 East Trinity Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+              "longitude" : "-86.745286"
+            },
+            "count" : 19
+          }, {
+            "item" : {
+              "latitude" : "36.093667",
+              "human_address" : "{\"address\":\"3718 Nolensville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+              "longitude" : "-86.736409"
+            },
+            "count" : 18
+          }, {
+            "item" : {
+              "latitude" : "36.122097",
+              "human_address" : "{\"address\":\"224 Oriel Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+              "longitude" : "-86.743627"
+            },
+            "count" : 17
+          } ],
+          "smallest" : {
+            "latitude" : "36.204273",
+            "human_address" : "{\"address\":\"1015 East Trinity Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "longitude" : "-86.745286"
+          }
+        },
+        "format" : { },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "attachments" : [ {
+          "filename" : "Public-Public-Health-Clinic-Information-Metadata.docx",
+          "assetId" : "CaCf0yL-UyW_sCTaOF4vspk8zE_IDvZslGqJ-JHzMW8",
+          "blobId" : "",
+          "name" : "Public-Public-Health-Clinic-Information-Metadata.docx"
+        } ],
+        "custom_fields" : {
+          "Does this data relate to one or more of the Mayor's Priority Areas?" : {
+            "Relates to Priority:" : "None"
+          }
+        },
+        "rowIdentifier" : "0",
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "n59w-v7ka",
+        "displayName" : "Open Data Administrator",
+        "lastNotificationSeenAt" : 1501700815,
+        "profileImageUrlLarge" : "/api/users/n59w-v7ka/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/n59w-v7ka/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/n59w-v7ka/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "Open Data Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors", "edit_others_stories", "view_stories_stats" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "n59w-v7ka",
+        "displayName" : "Open Data Administrator",
+        "lastNotificationSeenAt" : 1501700815,
+        "profileImageUrlLarge" : "/api/users/n59w-v7ka/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/n59w-v7ka/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/n59w-v7ka/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "Open Data Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors", "edit_others_stories", "view_stories_stats" ]
+      },
+      "tags" : [ "health", "clinic", "wic" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "BAE9246F-111A-47B8-A3A8-6F8C2AF62311", 1, 1449670757, "926011", 1454489690, "926011", null, "Lentz Public Health Center", "(615) 340-5616", "Monday - Friday 8:00 am until 4:30 pm", [ "{\"address\":\"2500 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}", "36.155043", "-86.812991", null, false ] ]
+, [ 2, "43001A7B-92C7-49D7-A9FA-F3445C6B9C1F", 2, 1449670757, "926011", 1454489711, "926011", null, "East Public Health Center", "(615) 862-7916", "Monday - Friday 7:30 am until 4:30 pm", [ "{\"address\":\"1015 East Trinity Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}", "36.204273", "-86.745286", null, false ] ]
+, [ 4, "972327DD-0A25-44AF-8745-8B8DA7941FA8", 4, 1449670757, "926011", 1454489720, "926011", null, "Woodbine Public Health Center", "(615) 862-7940", "Monday - Friday 7:00 am until 4:30 pm", [ "{\"address\":\"224 Oriel Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}", "36.122097", "-86.743627", null, false ] ]
+, [ 3, "61C01FFF-83B9-4C11-8B60-FD06E8A986EE", 3, 1449670757, "926011", 1454489728, "926011", null, "South Nashville WIC Nutrition Center (WIC Only)", "(615) 880-3210", "Monday – Thursday  7:30 am – 6:00 pm", [ "{\"address\":\"3718 Nolensville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}", "36.093667", "-86.736409", null, false ] ]
+ ]
+}
