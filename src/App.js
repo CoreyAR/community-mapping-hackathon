@@ -8,8 +8,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjwreFxybyROvLmpKPZWPF83NtqrSowZwgkh7eP4dycFeb9rfO" className="App-logo" alt="logo" />
+          <div>
           <h2>Immigrant Support System</h2>
+            <p className="description">A prototype app to help new immigrants to Nashville identify good places to live. The prototype is a heat map of bus stops, parks, international grocery stores.</p>
+          </div>
+          <a href="https://github.com/CoreyAR/community-mapping-hackathon"><img src={require('./Images/github-logo.png')} className="App-logo" alt="logo" /></a>
         </div>
         <RootMap>
         </RootMap>

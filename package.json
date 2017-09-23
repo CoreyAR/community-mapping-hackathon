@@ -2,7 +2,9 @@
   "name": "nash-map",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://coreyar.github.io/internash-map",
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "google-maps-react": "^1.0.19",
     "material-ui": "^0.17.1",
     "react": "^15.4.2",
@@ -15,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
