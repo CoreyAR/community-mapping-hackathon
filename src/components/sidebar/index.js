@@ -26,13 +26,15 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar" style={style}>
-        {this.props.markerKeys.map((t, idx) => 
-            <Toggle
+        {this.props.markerKeys.map((t, idx) =>
+            { 
+              return <Toggle
+              key={t}
               label={formatTitle(t)}
               onToggle={this.props.toggleMarkers.bind(this, t)}
               labelStyle={{color: 'white'}}
               name={t}
-            />
+            />}
         )}
       </div>
     );

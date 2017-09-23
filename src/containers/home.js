@@ -29,9 +29,10 @@ const Home = React.createClass({
     }
   },
 
-  fetchData() {
-    const dataManager = new DataManager(this.props.google)
-    this.setState({markerData: dataManager.markerData})
+  async fetchData(mapProps, map) {
+    const dataManager = new DataManager(this.props.google, map)
+    var md = await  dataManager.markerData()
+    this.setState({markerData: md})
   },
 
   fetchPlaces: function(mapProps, map) {
@@ -41,7 +42,7 @@ const Home = React.createClass({
     const service = new google.maps.places.PlacesService(map)
     service.textSearch(request, (results, status) => { 
       if  (status === this.props.google.maps.places.PlacesServiceStatus.OK) {
-        this.setState({internationalGrocery: results})
+        this.setState({markerData:  {internationalGrocery: {results}, ...this.state.markerData}})
       }
     })
   },
@@ -89,7 +90,7 @@ const Home = React.createClass({
       />
       <Map
         style={style}
-        onReady={this.fetchData}
+        onReady={this.fetchPlaces}
         google={this.props.google}
         zoom={14}
         initialCenter={{lat: 36.1639,lng: -86.7817}}
