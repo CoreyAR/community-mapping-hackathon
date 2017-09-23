@@ -7,10 +7,13 @@ import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../data/parks'
 import bustStopData from '../data/bus-stop'
+import clinicData from '../data/clinics'
+
 // Marker Logos
 import parksMarker from '../images/park-marker.png'
 import globeMarker from '../images/globe.png'
 import busMarker from '../images/bus_pointer.png'
+import clinicMarker from '../images/clinic-marker.png'
 
 const Home = React.createClass({
   getInitialState () {
@@ -113,18 +116,6 @@ const Home = React.createClass({
             )
           })
         }
-        {/* {
-          bustStopData.map((b, i) => {
-            this.state.points.push({key: 'bustop', lat: b.mapped_location.latitude, lng: b.mapped_location.longitude})
-            return (
-              <Marker
-                key={Math.random()}
-                position={{lat: b.mapped_location.latitude , lng: b.mapped_location.longitude}}
-                icon={busMarker}
-              />
-            )            
-          })
-        } */}
         <HeatmapOverlay
           points={this.state.points}
           weights={{bustop: 0.1 , park: 4, grocery: 15}}
