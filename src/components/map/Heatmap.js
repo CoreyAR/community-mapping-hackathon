@@ -26,12 +26,17 @@ export class HeatmapOverlay extends React.Component {
   componentWillReceiveProps (nextProps) {
     let points = nextProps.points.filter(p => p.lat !== null && p.lng !== null)
       .map((p) => {
-      return {location: new nextProps.google.maps.LatLng(p.lat, p.lng), weight: this.props.weights[p.key]}
+      return {location: new nextProps.google.maps.LatLng(p.lat, p.lng), weight: nextProps.weights[p.key]}
     })
     this.setState({points})
   }
 
   componentDidUpdate () {
+    if(this.heatmapOverlay){
+      // Unmounting because the heatmap retains previous points
+      this.heatmapOverlay.setMap(null)
+    }
+    
     this.renderHeatmapOverlay()
   }
 
@@ -85,7 +90,7 @@ export class HeatmapOverlay extends React.Component {
     evtNames.forEach(e => {
       this.heatmapOverlay.addListener(e, this.handleEvent(e))
     })
-
+    
     return this.heatmapOverlay
   }
 
