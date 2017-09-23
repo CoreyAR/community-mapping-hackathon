@@ -25,7 +25,8 @@ const Home = React.createClass({
       points: [],
 
       // New
-      toggledOn: []
+      toggledOn: [],
+      weights: {}
     }
   },
 
@@ -42,18 +43,27 @@ const Home = React.createClass({
   },
 
   toggleMarkers(t, e, on) {
-    console.log(t, on)
     const idx = this.state.toggledOn.indexOf(t)
-    console.log('idx', idx)
     if (on && idx < 0) {
-      console.log('on')
       this.state.toggledOn.push(t)
-      this.setState({toggledOn: this.state.toggledOn})
-    } else if (!on && idx > 0) {
-      console.log('off')
-      this.state.toggledOn.slice(idx,1)
-      this.setState({toggledOn: this.state.toggledOn})
+      const weights = this.calculateWeights()
+      this.setState({toggledOn: this.state.toggledOn, points: [], weights})
+      
+    } else if (!on && idx > -1) {
+      this.state.toggledOn.splice(idx,1)
+      const weights = this.calculateWeights()
+      this.setState({toggledOn: this.state.toggledOn, points: [], weights})
+      
     }
+  },
+
+  calculateWeights () {
+    let weights = {}
+    this.state.toggledOn.map((t) => {
+      weights[t] = this.props.markerData[t].weight
+      
+    })
+    return weights
   },
 
   render () {
@@ -94,7 +104,7 @@ const Home = React.createClass({
           {
             this.state.toggledOn.map((to) => {
               return this.props.markerData[to].list.map((m) => {
-              this.state.points.push({key: 'park', lat: m.mapped_location[1],lng: m.mapped_location[2]})
+              this.state.points.push({key: to, lat: m.mapped_location[1],lng: m.mapped_location[2]})
                 return (
                 <Marker
                   key={Math.random()}
@@ -104,7 +114,7 @@ const Home = React.createClass({
               )})
             })
           }
-        {
+        {/* {
           this.state.internationalGrocery.map((groc, i) => {
             this.state.points.push({key:'grocery', lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()})
             return (
@@ -115,10 +125,10 @@ const Home = React.createClass({
              />
             )
           })
-        }
+        } */}
         <HeatmapOverlay
           points={this.state.points}
-          weights={{bustop: 0.1 , park: 4, grocery: 15}}
+          weights={this.state.weights}
         />
       </Map>
       </div>

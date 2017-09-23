@@ -1,2978 +1,1212 @@
-{
-    "meta": {
-        "view": {
-            "id": "vn5u-d69i",
-            "name": "Library Location and Facilities",
-            "attribution": "Nashville Public Libraries",
-            "attributionLink": "http://www.library.nashville.org/locations/loc_all.asp",
-            "averageRating": 0,
-            "category": "Libraries",
-            "createdAt": 1460982156,
-            "description": "List of Nashville Public Library Locations and services offered",
-            "displayType": "table",
-            "downloadCount": 66,
-            "hideFromCatalog": false,
-            "hideFromDataJson": false,
-            "iconUrl": "fileId:e4ccf855-5edb-4f1d-bd7e-d87b7925f2c0",
-            "indexUpdatedAt": 1477058599,
-            "licenseId": "PUBLIC_DOMAIN",
-            "newBackend": false,
-            "numberOfComments": 0,
-            "oid": 20619802,
-            "provenance": "official",
-            "publicationAppendEnabled": false,
-            "publicationDate": 1462221514,
-            "publicationGroup": 10048860,
-            "publicationStage": "published",
-            "rowClass": "",
-            "rowsUpdatedAt": 1462221455,
-            "rowsUpdatedBy": "6z6e-pe5v",
-            "tableId": 10489376,
-            "totalTimesRated": 0,
-            "viewCount": 267,
-            "viewLastModified": 1477058547,
-            "viewType": "tabular",
-            "columns": [
-                {
-                    "id": -1,
-                    "name": "sid",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":sid",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "id",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":id",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "position",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":position",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "created_at",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":created_at",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "created_meta",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":created_meta",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "updated_at",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":updated_at",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "updated_meta",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":updated_meta",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": -1,
-                    "name": "meta",
-                    "dataTypeName": "meta_data",
-                    "fieldName": ":meta",
-                    "position": 0,
-                    "renderTypeName": "meta_data",
-                    "format": {},
-                    "flags": [
-                        "hidden"
-                    ]
-                },
-                {
-                    "id": 253231162,
-                    "name": "Library Name",
-                    "dataTypeName": "text",
-                    "fieldName": "library_name",
-                    "position": 1,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723710,
-                    "width": 102,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Watkins Park",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Main",
-                                "count": 20
-                            },
-                            {
-                                "item": "Bellevue",
-                                "count": 19
-                            },
-                            {
-                                "item": "Bordeaux",
-                                "count": 18
-                            },
-                            {
-                                "item": "Donelson",
-                                "count": 17
-                            },
-                            {
-                                "item": "East",
-                                "count": 16
-                            },
-                            {
-                                "item": "Edgehill",
-                                "count": 15
-                            },
-                            {
-                                "item": "Edmondson Pike",
-                                "count": 14
-                            },
-                            {
-                                "item": "Goodlettsville",
-                                "count": 13
-                            },
-                            {
-                                "item": "Green Hills",
-                                "count": 12
-                            },
-                            {
-                                "item": "Hadley Park",
-                                "count": 11
-                            },
-                            {
-                                "item": "Hermitage ",
-                                "count": 10
-                            },
-                            {
-                                "item": "Inglewood",
-                                "count": 9
-                            },
-                            {
-                                "item": "Looby",
-                                "count": 8
-                            },
-                            {
-                                "item": "Madison",
-                                "count": 7
-                            },
-                            {
-                                "item": "North",
-                                "count": 6
-                            },
-                            {
-                                "item": "Old Hickory",
-                                "count": 5
-                            },
-                            {
-                                "item": "Pruitt",
-                                "count": 4
-                            },
-                            {
-                                "item": "Richland Park",
-                                "count": 3
-                            },
-                            {
-                                "item": "Southeast ",
-                                "count": 2
-                            },
-                            {
-                                "item": "Thompson Lane",
-                                "count": 1
-                            }
-                        ],
-                        "smallest": "Bellevue"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253232575,
-                    "name": "Library Photo",
-                    "dataTypeName": "url",
-                    "fieldName": "library_photo_url",
-                    "position": 2,
-                    "renderTypeName": "url",
-                    "tableColumnId": 35980498,
-                    "width": 100,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": {
-                            "description": "View Photo",
-                            "url": "http://dataimages.nashville.gov/Metro_Libraries/new-bellevue_cropped.jpg"
-                        },
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_main.jpg"
-                                },
-                                "count": 20
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/new-bellevue_cropped.jpg"
-                                },
-                                "count": 19
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_BX.jpg"
-                                },
-                                "count": 18
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_DO.jpg"
-                                },
-                                "count": 17
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_E.jpg"
-                                },
-                                "count": 16
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_EH.jpg"
-                                },
-                                "count": 15
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_EP.jpg"
-                                },
-                                "count": 14
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/loc_go_new_small.jpg"
-                                },
-                                "count": 13
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_GH.jpg"
-                                },
-                                "count": 12
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_HP.jpg"
-                                },
-                                "count": 11
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_HM.jpg"
-                                },
-                                "count": 10
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_ING.jpg"
-                                },
-                                "count": 9
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_LO.jpg"
-                                },
-                                "count": 8
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/loc_ma.jpg"
-                                },
-                                "count": 7
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_NO.jpg"
-                                },
-                                "count": 6
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_OH.jpg"
-                                },
-                                "count": 5
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_PR.jpg"
-                                },
-                                "count": 4
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_RP.jpg"
-                                },
-                                "count": 3
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/SE_exterior.jpg"
-                                },
-                                "count": 2
-                            },
-                            {
-                                "item": {
-                                    "description": "View Photo",
-                                    "url": "http://dataimages.nashville.gov/Metro_Libraries/loc_tl_int.jpg"
-                                },
-                                "count": 1
-                            }
-                        ],
-                        "smallest": {
-                            "description": "View Photo",
-                            "url": "http://dataimages.nashville.gov/Metro_Libraries/LOC_BX.jpg"
-                        }
-                    },
-                    "format": {
-                        "align": "left"
-                    },
-                    "subColumnTypes": [
-                        "url",
-                        "description"
-                    ]
-                },
-                {
-                    "id": 253231163,
-                    "name": "Phone Number",
-                    "dataTypeName": "text",
-                    "fieldName": "phone_number",
-                    "position": 3,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723711,
-                    "width": 99,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "615-880-3957",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "615-862-5800",
-                                "count": 20
-                            },
-                            {
-                                "item": "615-862-5854",
-                                "count": 19
-                            },
-                            {
-                                "item": "615-862-5856",
-                                "count": 18
-                            },
-                            {
-                                "item": "615-862-5859",
-                                "count": 17
-                            },
-                            {
-                                "item": "615-862-5860",
-                                "count": 16
-                            },
-                            {
-                                "item": "615-862-5861",
-                                "count": 15
-                            },
-                            {
-                                "item": "615-880-3957",
-                                "count": 14
-                            },
-                            {
-                                "item": "615-862-5862",
-                                "count": 13
-                            },
-                            {
-                                "item": "615-862-5863",
-                                "count": 12
-                            },
-                            {
-                                "item": "615-862-5865",
-                                "count": 11
-                            },
-                            {
-                                "item": "615-880-3951",
-                                "count": 10
-                            },
-                            {
-                                "item": "615-862-5866",
-                                "count": 9
-                            },
-                            {
-                                "item": "615-862-5867",
-                                "count": 8
-                            },
-                            {
-                                "item": "615-862-5868",
-                                "count": 7
-                            },
-                            {
-                                "item": "615-862-5858",
-                                "count": 6
-                            },
-                            {
-                                "item": "615-862-5869",
-                                "count": 5
-                            },
-                            {
-                                "item": "615-862-5985",
-                                "count": 4
-                            },
-                            {
-                                "item": "615-862-5870",
-                                "count": 3
-                            },
-                            {
-                                "item": "615-862-5871",
-                                "count": 2
-                            },
-                            {
-                                "item": "615-862-5873",
-                                "count": 1
-                            }
-                        ],
-                        "smallest": "615-862-5800"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231164,
-                    "name": "Bus Route",
-                    "dataTypeName": "text",
-                    "fieldName": "bus_route",
-                    "position": 4,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723712,
-                    "width": 208,
-                    "cachedContents": {
-                        "non_null": 20,
-                        "largest": "Walking distance from Music City Central",
-                        "null": 2,
-                        "top": [
-                            {
-                                "item": "Walking distance from Music City Central",
-                                "count": 20
-                            },
-                            {
-                                "item": "#24x, #31,# 5",
-                                "count": 19
-                            },
-                            {
-                                "item": "#22",
-                                "count": 18
-                            },
-                            {
-                                "item": "#6",
-                                "count": 17
-                            },
-                            {
-                                "item": "#20, #26",
-                                "count": 16
-                            },
-                            {
-                                "item": "#17",
-                                "count": 15
-                            },
-                            {
-                                "item": "#37, #72",
-                                "count": 14
-                            },
-                            {
-                                "item": "#7",
-                                "count": 13
-                            },
-                            {
-                                "item": "#29",
-                                "count": 12
-                            },
-                            {
-                                "item": "#26 Local, #56 BRT",
-                                "count": 11
-                            },
-                            {
-                                "item": "#9",
-                                "count": 10
-                            },
-                            {
-                                "item": "#26, #56, #76",
-                                "count": 9
-                            },
-                            {
-                                "item": "#29, #42",
-                                "count": 8
-                            },
-                            {
-                                "item": "#27",
-                                "count": 7
-                            },
-                            {
-                                "item": "#25",
-                                "count": 6
-                            },
-                            {
-                                "item": "#10",
-                                "count": 5
-                            },
-                            {
-                                "item": "#15, #55 BRT",
-                                "count": 4
-                            },
-                            {
-                                "item": "#12",
-                                "count": 3
-                            },
-                            {
-                                "item": "#19, #25",
-                                "count": 2
-                            }
-                        ],
-                        "smallest": "#10"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231165,
-                    "name": "Monday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "monday_opening_time",
-                    "position": 5,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723713,
-                    "width": 136,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "9:00AM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231166,
-                    "name": "Monday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "monday_closing_time",
-                    "position": 6,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723714,
-                    "width": 132,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "8:00 PM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "6:00 PM",
-                                "count": 20
-                            },
-                            {
-                                "item": "8:00 PM",
-                                "count": 19
-                            },
-                            {
-                                "item": "6:00PM",
-                                "count": 18
-                            },
-                            {
-                                "item": "8:00PM",
-                                "count": 17
-                            }
-                        ],
-                        "smallest": "6:00PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231176,
-                    "name": "Tuesday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "tuesday_opening_time",
-                    "position": 7,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723715,
-                    "width": 144,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "9:00AM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            },
-                            {
-                                "item": "12:00PM",
-                                "count": 18
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231186,
-                    "name": "Tuesday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "tuesday_closing_time",
-                    "position": 8,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723716,
-                    "width": 127,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "8:00PM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "6:00PM",
-                                "count": 20
-                            },
-                            {
-                                "item": "8:00PM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "6:00PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231190,
-                    "name": "Wednesday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "wednesday_opening_time",
-                    "position": 9,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723717,
-                    "width": 162,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "9:00AM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231191,
-                    "name": "Wednesday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "wednesday_closing_time",
-                    "position": 10,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723718,
-                    "width": 150,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "8:00PM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "6:00PM",
-                                "count": 20
-                            },
-                            {
-                                "item": "8:00PM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "6:00PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231192,
-                    "name": "Thursday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "thursday_opening_time",
-                    "position": 11,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723721,
-                    "width": 143,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "9:00AM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            },
-                            {
-                                "item": "12:00PM",
-                                "count": 18
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231193,
-                    "name": "Thursday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "thursday_closing_time",
-                    "position": 12,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723726,
-                    "width": 134,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "8:00PM",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "6:00PM",
-                                "count": 20
-                            },
-                            {
-                                "item": "8:00PM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "6:00PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231194,
-                    "name": "Friday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "friday_opening_time",
-                    "position": 13,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723729,
-                    "width": 124,
-                    "cachedContents": {
-                        "non_null": 8,
-                        "largest": "9:00AM",
-                        "null": 14,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231195,
-                    "name": "Friday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "friday_closing_time",
-                    "position": 14,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723730,
-                    "width": 119,
-                    "cachedContents": {
-                        "non_null": 8,
-                        "largest": "6:00PM",
-                        "null": 14,
-                        "top": [
-                            {
-                                "item": "6:00PM",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "6:00PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231196,
-                    "name": "Saturday Opening Time ",
-                    "dataTypeName": "text",
-                    "fieldName": "saturday_opening_time",
-                    "position": 15,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723731,
-                    "width": 142,
-                    "cachedContents": {
-                        "non_null": 20,
-                        "largest": "9:00AM",
-                        "null": 2,
-                        "top": [
-                            {
-                                "item": "9:00AM",
-                                "count": 20
-                            },
-                            {
-                                "item": "10:00AM",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "10:00AM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231197,
-                    "name": "Saturday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "saturday_closing_time",
-                    "position": 16,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723732,
-                    "width": 135,
-                    "cachedContents": {
-                        "non_null": 20,
-                        "largest": "5:00 PM",
-                        "null": 2,
-                        "top": [
-                            {
-                                "item": "5:00 PM",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "5:00 PM"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231198,
-                    "name": "Sunday Opening Time",
-                    "dataTypeName": "text",
-                    "fieldName": "sunday_opening_time",
-                    "position": 17,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723733,
-                    "width": 135,
-                    "cachedContents": {
-                        "non_null": 12,
-                        "largest": "2:00PM",
-                        "null": 10,
-                        "top": [
-                            {
-                                "item": "2:00PM",
-                                "count": 20
-                            },
-                            {
-                                "item": " ",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": " "
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231199,
-                    "name": "Sunday Closing Time",
-                    "dataTypeName": "text",
-                    "fieldName": "sunday_closing_time",
-                    "position": 18,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723734,
-                    "width": 127,
-                    "cachedContents": {
-                        "non_null": 9,
-                        "largest": "5:00PM",
-                        "null": 13,
-                        "top": [
-                            {
-                                "item": "5:00PM",
-                                "count": 20
-                            },
-                            {
-                                "item": " ",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": " "
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231200,
-                    "name": "Books and Materials",
-                    "dataTypeName": "text",
-                    "fieldName": "books_and_materials",
-                    "position": 19,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723735,
-                    "width": 122,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231206,
-                    "name": "Downloadable Materials",
-                    "dataTypeName": "text",
-                    "fieldName": "downloadable_materials",
-                    "position": 20,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723736,
-                    "width": 149,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231215,
-                    "name": "Streaming Materials",
-                    "dataTypeName": "text",
-                    "fieldName": "streaming_materials",
-                    "position": 21,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723737,
-                    "width": 122,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231223,
-                    "name": "Story Times",
-                    "dataTypeName": "text",
-                    "fieldName": "story_times",
-                    "position": 22,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723738,
-                    "width": 71,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231225,
-                    "name": "Conference Center",
-                    "dataTypeName": "text",
-                    "fieldName": "conference_center",
-                    "position": 23,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723739,
-                    "width": 115,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231226,
-                    "name": "Meeting Rooms",
-                    "dataTypeName": "text",
-                    "fieldName": "meeting_rooms",
-                    "position": 24,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723740,
-                    "width": 94,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231227,
-                    "name": "Art Gallery",
-                    "dataTypeName": "text",
-                    "fieldName": "art_gallery",
-                    "position": 25,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723741,
-                    "width": 67,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231228,
-                    "name": "Public Computers",
-                    "dataTypeName": "text",
-                    "fieldName": "public_computers",
-                    "position": 26,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723742,
-                    "width": 109,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231229,
-                    "name": "Public Internet",
-                    "dataTypeName": "text",
-                    "fieldName": "public_internet",
-                    "position": 27,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723743,
-                    "width": 94,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231230,
-                    "name": "Wireless",
-                    "dataTypeName": "text",
-                    "fieldName": "wireless",
-                    "position": 28,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723744,
-                    "width": 62,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231231,
-                    "name": "Group Study Rooms",
-                    "dataTypeName": "text",
-                    "fieldName": "group_study_rooms",
-                    "position": 29,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723745,
-                    "width": 118,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231232,
-                    "name": "Copy Machines",
-                    "dataTypeName": "text",
-                    "fieldName": "copy_machines",
-                    "position": 30,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723746,
-                    "width": 90,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231233,
-                    "name": "Seed Exchange",
-                    "dataTypeName": "text",
-                    "fieldName": "seed_exchange",
-                    "position": 31,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723747,
-                    "width": 99,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231234,
-                    "name": "Studio NPL",
-                    "dataTypeName": "text",
-                    "fieldName": "studio_npl",
-                    "position": 32,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723748,
-                    "width": 62,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            },
-                            {
-                                "item": "No",
-                                "count": 19
-                            }
-                        ],
-                        "smallest": "No"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231235,
-                    "name": "Restrooms",
-                    "dataTypeName": "text",
-                    "fieldName": "restrooms",
-                    "position": 33,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723749,
-                    "width": 61,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231236,
-                    "name": "Book Drop",
-                    "dataTypeName": "text",
-                    "fieldName": "book_drop",
-                    "position": 34,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723750,
-                    "width": 64,
-                    "cachedContents": {
-                        "non_null": 21,
-                        "largest": "Yes",
-                        "null": 1,
-                        "top": [
-                            {
-                                "item": "Yes",
-                                "count": 20
-                            }
-                        ],
-                        "smallest": "Yes"
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231237,
-                    "name": "Notes",
-                    "dataTypeName": "text",
-                    "fieldName": "notes",
-                    "position": 35,
-                    "renderTypeName": "text",
-                    "tableColumnId": 35723751,
-                    "width": 444,
-                    "cachedContents": {
-                        "non_null": 22,
-                        "largest": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-                        "null": 0,
-                        "top": [
-                            {
-                                "item": "Call library to confirm hours on holidays and in the event of severe weather.",
-                                "count": 20
-                            },
-                            {
-                                "item": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-                                "count": 19
-                            },
-                            {
-                                "item": "CLOSED for renovation until May 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
-                                "count": 18
-                            },
-                            {
-                                "item": "Closed on Friday and Sunday. Call library to confirm hours on holidays and in the event of severe weather.",
-                                "count": 17
-                            },
-                            {
-                                "item": "CLOSED for renovation until June 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
-                                "count": 16
-                            },
-                            {
-                                "item": " ",
-                                "count": 15
-                            }
-                        ],
-                        "smallest": " "
-                    },
-                    "format": {}
-                },
-                {
-                    "id": 253231238,
-                    "name": "Location",
-                    "dataTypeName": "location",
-                    "fieldName": "location",
-                    "position": 36,
-                    "renderTypeName": "location",
-                    "tableColumnId": 35723752,
-                    "width": 196,
-                    "cachedContents": {
-                        "non_null": 22,
-                        "largest": {
-                            "latitude": "36.069242",
-                            "human_address": "{\"address\":\"720 Baugh Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37221\"}",
-                            "longitude": "-86.935419"
-                        },
-                        "null": 0,
-                        "top": [
-                            {
-                                "item": {
-                                    "latitude": "36.162414",
-                                    "human_address": "{\"address\":\"615 Church Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37219\"}",
-                                    "longitude": "-86.781895"
-                                },
-                                "count": 20
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.069242",
-                                    "human_address": "{\"address\":\"720 Baugh Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37221\"}",
-                                    "longitude": "-86.935419"
-                                },
-                                "count": 19
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.211684",
-                                    "human_address": "{\"address\":\"4000 Clarksville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37218\"}",
-                                    "longitude": "-86.838746"
-                                },
-                                "count": 18
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.168936",
-                                    "human_address": "{\"address\":\"2315 Lebanon Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37214\"}",
-                                    "longitude": "-86.683548"
-                                },
-                                "count": 17
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.17912",
-                                    "human_address": "{\"address\":\"206 Gallatin Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37206\"}",
-                                    "longitude": "-86.750438"
-                                },
-                                "count": 16
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.138982",
-                                    "human_address": "{\"address\":\"1409 12th Avenue, South\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37203\"}",
-                                    "longitude": "-86.787715"
-                                },
-                                "count": 15
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.044746",
-                                    "human_address": "{\"address\":\"5501 Edmondson Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
-                                    "longitude": "-86.744004"
-                                },
-                                "count": 14
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.314643",
-                                    "human_address": "{\"address\":\"205 Rivergate Parkway\",\"city\":\"Goodlettsville\",\"state\":\"TN\",\"zip\":\"37072\"}",
-                                    "longitude": "-86.709932"
-                                },
-                                "count": 13
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.109283",
-                                    "human_address": "{\"address\":\"3701 Benham Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37215\"}",
-                                    "longitude": "-86.808739"
-                                },
-                                "count": 12
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.166888",
-                                    "human_address": "{\"address\":\"1039 28th Ave., North\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
-                                    "longitude": "-86.820526"
-                                },
-                                "count": 11
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.177515",
-                                    "human_address": "{\"address\":\"3700 James Kay Lane\",\"city\":\"Hermitage\",\"state\":\"TN\",\"zip\":\"370706\"}",
-                                    "longitude": "-86.61674"
-                                },
-                                "count": 10
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.225814",
-                                    "human_address": "{\"address\":\"4312 Gallatin Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37216\"}",
-                                    "longitude": "-86.725447"
-                                },
-                                "count": 9
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.193625",
-                                    "human_address": "{\"address\":\"2301 Rosa L. Parks Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37228\"}",
-                                    "longitude": "-86.808126"
-                                },
-                                "count": 8
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.257054",
-                                    "human_address": "{\"address\":\"610 Gallatin Pike South\",\"city\":\"Madison\",\"state\":\"TN\",\"zip\":\"37115\"}",
-                                    "longitude": "-86.714041"
-                                },
-                                "count": 7
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.174413",
-                                    "human_address": "{\"address\":\"1001 Monroe Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
-                                    "longitude": "-86.795942"
-                                },
-                                "count": 6
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.260014",
-                                    "human_address": "{\"address\":\"1010 Jones Street\",\"city\":\"Old Hickokry\",\"state\":\"TN\",\"zip\":\"37138\"}",
-                                    "longitude": "-86.645958"
-                                },
-                                "count": 5
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.151725",
-                                    "human_address": "{\"address\":\"117 Charles E. Davis Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37210\"}",
-                                    "longitude": "-86.762036"
-                                },
-                                "count": 4
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.152105",
-                                    "human_address": "{\"address\":\"4711 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37209\"}",
-                                    "longitude": "-86.84438"
-                                },
-                                "count": 3
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.048391",
-                                    "human_address": "{\"address\":\"5260 Hickory Hollow Parkway\",\"city\":\"Antioch\",\"state\":\"TN\",\"zip\":\"37013\"}",
-                                    "longitude": "-86.657027"
-                                },
-                                "count": 2
-                            },
-                            {
-                                "item": {
-                                    "latitude": "36.110801",
-                                    "human_address": "{\"address\":\"380 Thompson Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
-                                    "longitude": "-86.743292"
-                                },
-                                "count": 1
-                            }
-                        ],
-                        "smallest": {
-                            "latitude": "35.681402",
-                            "human_address": "{\"address\":\"\",\"city\":\"\",\"state\":\"TN\",\"zip\":\"\"}",
-                            "longitude": "-85.774444"
-                        }
-                    },
-                    "format": {},
-                    "subColumnTypes": [
-                        "human_address",
-                        "latitude",
-                        "longitude",
-                        "machine_address",
-                        "needs_recoding"
-                    ]
-                }
-            ],
-            "grants": [
-                {
-                    "inherited": false,
-                    "type": "viewer",
-                    "flags": [
-                        "public"
-                    ]
-                }
-            ],
-            "license": {
-                "name": "Public Domain"
-            },
-            "metadata": {
-                "rdfSubject": "0",
-                "rdfClass": "",
-                "attachments": [
-                    {
-                        "filename": "Nashville-Public-Libraries-Metadata.docx",
-                        "assetId": "f9693980-5c7e-4ebf-8806-5f9785d67937",
-                        "blobId": "",
-                        "name": "Nashville-Public-Libraries-Metadata.docx"
-                    }
-                ],
-                "rowIdentifier": "0",
-                "availableDisplayTypes": [
-                    "table",
-                    "fatrow",
-                    "page"
-                ],
-                "rowLabel": "Row",
-                "renderTypeConfig": {
-                    "visible": {
-                        "table": true
-                    }
-                }
-            },
-            "owner": {
-                "id": "n59w-v7ka",
-                "displayName": "Open Data Administrator",
-                "lastNotificationSeenAt": 1501700815,
-                "profileImageUrlLarge": "/api/users/n59w-v7ka/profile_images/LARGE",
-                "profileImageUrlMedium": "/api/users/n59w-v7ka/profile_images/THUMB",
-                "profileImageUrlSmall": "/api/users/n59w-v7ka/profile_images/TINY",
-                "roleName": "administrator",
-                "screenName": "Open Data Administrator",
-                "rights": [
-                    "create_datasets",
-                    "edit_others_datasets",
-                    "edit_sdp",
-                    "edit_site_theme",
-                    "moderate_comments",
-                    "manage_users",
-                    "chown_datasets",
-                    "edit_nominations",
-                    "approve_nominations",
-                    "feature_items",
-                    "federations",
-                    "manage_stories",
-                    "manage_approval",
-                    "change_configurations",
-                    "view_domain",
-                    "view_others_datasets",
-                    "edit_pages",
-                    "create_pages",
-                    "view_goals",
-                    "view_dashboards",
-                    "edit_goals",
-                    "edit_dashboards",
-                    "create_dashboards",
-                    "manage_provenance",
-                    "create_story",
-                    "edit_story_title_desc",
-                    "create_story_copy",
-                    "delete_story",
-                    "manage_story_collaborators",
-                    "manage_story_visibility",
-                    "manage_story_public_version",
-                    "edit_story",
-                    "view_unpublished_story",
-                    "view_story",
-                    "view_all_dataset_status_logs",
-                    "use_data_connectors",
-                    "edit_others_stories",
-                    "view_stories_stats"
-                ]
-            },
-            "query": {},
-            "rights": [
-                "read"
-            ],
-            "tableAuthor": {
-                "id": "n59w-v7ka",
-                "displayName": "Open Data Administrator",
-                "lastNotificationSeenAt": 1501700815,
-                "profileImageUrlLarge": "/api/users/n59w-v7ka/profile_images/LARGE",
-                "profileImageUrlMedium": "/api/users/n59w-v7ka/profile_images/THUMB",
-                "profileImageUrlSmall": "/api/users/n59w-v7ka/profile_images/TINY",
-                "roleName": "administrator",
-                "screenName": "Open Data Administrator",
-                "rights": [
-                    "create_datasets",
-                    "edit_others_datasets",
-                    "edit_sdp",
-                    "edit_site_theme",
-                    "moderate_comments",
-                    "manage_users",
-                    "chown_datasets",
-                    "edit_nominations",
-                    "approve_nominations",
-                    "feature_items",
-                    "federations",
-                    "manage_stories",
-                    "manage_approval",
-                    "change_configurations",
-                    "view_domain",
-                    "view_others_datasets",
-                    "edit_pages",
-                    "create_pages",
-                    "view_goals",
-                    "view_dashboards",
-                    "edit_goals",
-                    "edit_dashboards",
-                    "create_dashboards",
-                    "manage_provenance",
-                    "create_story",
-                    "edit_story_title_desc",
-                    "create_story_copy",
-                    "delete_story",
-                    "manage_story_collaborators",
-                    "manage_story_visibility",
-                    "manage_story_public_version",
-                    "edit_story",
-                    "view_unpublished_story",
-                    "view_story",
-                    "view_all_dataset_status_logs",
-                    "use_data_connectors",
-                    "edit_others_stories",
-                    "view_stories_stats"
-                ]
-            },
-            "tags": [
-                "library",
-                "facilities",
-                "operations",
-                "hours",
-                "services"
-            ],
-            "flags": [
-                "default",
-                "restorable",
-                "restorePossibleForType"
-            ]
-        }
+[
+    {
+        "library_name": null,
+        ":created_at": 1460956963,
+        "saturday_opening_time": null,
+        "art_gallery": null,
+        "mapped_location": [
+            "{\"address\":\"\",\"city\":\"\",\"state\":\"TN\",\"zip\":\"\"}",
+            "35.681402",
+            "-85.774444",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": null,
+        "monday_closing_time": null,
+        "tuesday_closing_time": null,
+        "books_and_materials": null,
+        ":position": 22,
+        "thursday_opening_time": null,
+        "copy_machines": null,
+        "conference_center": null,
+        ":updated_at": 1460956989,
+        ":created_meta": "926011",
+        ":id": "42CF4240-A45F-435B-9D1A-EEFC09D91826",
+        "wednesday_opening_time": null,
+        "public_computers": null,
+        "group_study_rooms": null,
+        "phone_number": null,
+        "library_photo_url": [
+            null,
+            null
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": null,
+        "bus_route": null,
+        "studio_npl": null,
+        "saturday_closing_time": null,
+        "story_times": null,
+        "monday_opening_time": null,
+        "downloadable_materials": null,
+        "public_internet": null,
+        ":updated_meta": "926011",
+        ":sid": 22,
+        "restrooms": null,
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": null,
+        "notes": " ",
+        "streaming_materials": null,
+        "wednesday_closing_time": null,
+        ":meta": null,
+        "meeting_rooms": null,
+        "book_drop": null,
+        "wireless": null
     },
-    "data": [
-        [
-            22,
-            "42CF4240-A45F-435B-9D1A-EEFC09D91826",
-            22,
-            1460956963,
-            "926011",
-            1460956989,
-            "926011",
+    {
+        "library_name": "Main",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "9:00AM",
+        "art_gallery": "Yes",
+        "mapped_location": [
+            "{\"address\":\"615 Church Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37219\"}",
+            "36.162414",
+            "-86.781895",
             null,
-            null,
-            [
-                null,
-                null
-            ],
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            " ",
-            [
-                "{\"address\":\"\",\"city\":\"\",\"state\":\"TN\",\"zip\":\"\"}",
-                "35.681402",
-                "-85.774444",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            1,
-            "AF528700-51B6-4427-AACF-5ED8A7E5E882",
-            1,
-            1460956963,
-            "926011",
-            1462195381,
-            "926011",
-            null,
-            "Main",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_main.jpg",
-                "View Photo"
-            ],
-            "615-862-5800",
-            "Walking distance from Music City Central",
-            "9:00AM",
-            "6:00 PM",
-            "9:00AM",
-            "6:00PM",
-            "9:00AM",
-            "6:00PM",
-            "9:00AM",
-            "6:00PM",
-            "9:00AM",
-            "6:00PM",
-            "9:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"615 Church Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37219\"}",
-                "36.162414",
-                "-86.781895",
-                null,
-                false
-            ]
+        "friday_opening_time": "9:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "6:00 PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 1,
+        "thursday_opening_time": "9:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "Yes",
+        ":updated_at": 1462195381,
+        ":created_meta": "926011",
+        ":id": "AF528700-51B6-4427-AACF-5ED8A7E5E882",
+        "wednesday_opening_time": "9:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5800",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_main.jpg",
+            "View Photo"
         ],
-        [
-            2,
-            "75596DCC-EF00-4F8F-A3C0-4FEE0E59209A",
-            2,
-            1460956963,
-            "926011",
-            1462195452,
-            "926011",
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "9:00AM",
+        "bus_route": "Walking distance from Music City Central",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "9:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 1,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "6:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Bellevue",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"720 Baugh Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37221\"}",
+            "36.069242",
+            "-86.935419",
             null,
-            "Bellevue",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/new-bellevue_cropped.jpg",
-                "View Photo"
-            ],
-            "615-862-5854",
-            "#24x, #31,# 5",
-            "10:00AM",
-            "8:00 PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"720 Baugh Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37221\"}",
-                "36.069242",
-                "-86.935419",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            3,
-            "4455F15D-4EF9-41BE-BA64-38E7DF05D03C",
-            3,
-            1460956963,
-            "926011",
-            1462195515,
-            "926011",
-            null,
-            "Bordeaux",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_BX.jpg",
-                "View Photo"
-            ],
-            "615-862-5856",
-            "#22",
-            "10:00AM",
-            "8:00 PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"4000 Clarksville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37218\"}",
-                "36.211684",
-                "-86.838746",
-                null,
-                false
-            ]
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "8:00 PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 2,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195452,
+        ":created_meta": "926011",
+        ":id": "75596DCC-EF00-4F8F-A3C0-4FEE0E59209A",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5854",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/new-bellevue_cropped.jpg",
+            "View Photo"
         ],
-        [
-            4,
-            "F828FE81-F4AA-410A-8F7F-449A3061947B",
-            4,
-            1460956963,
-            "926011",
-            1462195588,
-            "926011",
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#24x, #31,# 5",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 2,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "8:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Bordeaux",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"4000 Clarksville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37218\"}",
+            "36.211684",
+            "-86.838746",
             null,
-            "Donelson",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_DO.jpg",
-                "View Photo"
-            ],
-            "615-862-5859",
-            "#6",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            " ",
-            " ",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"2315 Lebanon Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37214\"}",
-                "36.168936",
-                "-86.683548",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            5,
-            "FFA87852-87AC-40FA-B87F-6C0140BD3449",
-            5,
-            1460956963,
-            "926011",
-            1462195666,
-            "926011",
-            null,
-            "East",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_E.jpg",
-                "View Photo"
-            ],
-            "615-862-5860",
-            "#20, #26",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"206 Gallatin Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37206\"}",
-                "36.17912",
-                "-86.750438",
-                null,
-                false
-            ]
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "8:00 PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 3,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195515,
+        ":created_meta": "926011",
+        ":id": "4455F15D-4EF9-41BE-BA64-38E7DF05D03C",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5856",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_BX.jpg",
+            "View Photo"
         ],
-        [
-            6,
-            "D7BE3102-6BA3-487D-A87E-D7A058F82C4C",
-            6,
-            1460956963,
-            "926011",
-            1462195694,
-            "926011",
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#22",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 3,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Donelson",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"2315 Lebanon Road\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37214\"}",
+            "36.168936",
+            "-86.683548",
             null,
-            "Edgehill",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_EH.jpg",
-                "View Photo"
-            ],
-            "615-862-5861",
-            "#17",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"1409 12th Avenue, South\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37203\"}",
-                "36.138982",
-                "-86.787715",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            7,
-            "FDED848C-EE77-4C39-B2EF-FBAEED1B3DDA",
-            7,
-            1460956963,
-            "926011",
-            1462195722,
-            "926011",
-            null,
-            "Edmondson Pike",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_EP.jpg",
-                "View Photo"
-            ],
-            "615-880-3957",
-            "#37, #72",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "CLOSED for renovation until May 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"5501 Edmondson Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
-                "36.044746",
-                "-86.744004",
-                null,
-                false
-            ]
+        "friday_opening_time": null,
+        "seed_exchange": "Yes",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 4,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195588,
+        ":created_meta": "926011",
+        ":id": "F828FE81-F4AA-410A-8F7F-449A3061947B",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5859",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_DO.jpg",
+            "View Photo"
         ],
-        [
-            8,
-            "92B0B2A4-355F-4F09-B356-C1F79AF24915",
-            8,
-            1460956963,
-            "926011",
-            1462195787,
-            "926011",
+        "sunday_closing_time": " ",
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#6",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 4,
+        "restrooms": "Yes",
+        "sunday_opening_time": " ",
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "East",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"206 Gallatin Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37206\"}",
+            "36.17912",
+            "-86.750438",
             null,
-            "Goodlettsville",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/loc_go_new_small.jpg",
-                "View Photo"
-            ],
-            "615-862-5862",
-            null,
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            " ",
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday. Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"205 Rivergate Parkway\",\"city\":\"Goodlettsville\",\"state\":\"TN\",\"zip\":\"37072\"}",
-                "36.314643",
-                "-86.709932",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            9,
-            "3255CA01-DD07-4F93-A28C-576DEF789EC6",
-            9,
-            1460956963,
-            "926011",
-            1462195836,
-            "926011",
-            "{\"invalidCells\":{\"library_photo_url\":\"loc_go_new_small\"}}",
-            "Green Hills",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_GH.jpg",
-                "View Photo"
-            ],
-            "615-862-5863",
-            "#7",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"3701 Benham Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37215\"}",
-                "36.109283",
-                "-86.808739",
-                null,
-                false
-            ]
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 5,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195666,
+        ":created_meta": "926011",
+        ":id": "FFA87852-87AC-40FA-B87F-6C0140BD3449",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5860",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_E.jpg",
+            "View Photo"
         ],
-        [
-            10,
-            "F82AB7EA-9C22-473A-9700-C3E6A585314E",
-            10,
-            1460956963,
-            "926011",
-            1462195907,
-            "926011",
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#20, #26",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 5,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Edgehill",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"1409 12th Avenue, South\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37203\"}",
+            "36.138982",
+            "-86.787715",
             null,
-            "Hadley Park",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_HP.jpg",
-                "View Photo"
-            ],
-            "615-862-5865",
-            "#29",
-            "10:00AM",
-            "6:00 PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            " ",
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"1039 28th Ave., North\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
-                "36.166888",
-                "-86.820526",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            11,
-            "DBFBF367-BB79-4576-B02D-DDD5FBF054F3",
-            11,
-            1460956963,
-            "926011",
-            1462195939,
-            "926011",
-            null,
-            "Hermitage ",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_HM.jpg",
-                "View Photo"
-            ],
-            "615-880-3951",
-            "#6",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"3700 James Kay Lane\",\"city\":\"Hermitage\",\"state\":\"TN\",\"zip\":\"370706\"}",
-                "36.177515",
-                "-86.61674",
-                null,
-                false
-            ]
+        "friday_opening_time": null,
+        "seed_exchange": "Yes",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 6,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195694,
+        ":created_meta": "926011",
+        ":id": "D7BE3102-6BA3-487D-A87E-D7A058F82C4C",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5861",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_EH.jpg",
+            "View Photo"
         ],
-        [
-            19,
-            "705A5ABF-EBF9-482B-89D2-82EAA0400749",
-            19,
-            1460956963,
-            "926011",
-            1462196140,
-            "926011",
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#17",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 6,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Edmondson Pike",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"5501 Edmondson Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
+            "36.044746",
+            "-86.744004",
             null,
-            "Southeast ",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/SE_exterior.jpg",
-                "View Photo"
-            ],
-            "615-862-5871",
-            "#15, #55 BRT",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"5260 Hickory Hollow Parkway\",\"city\":\"Antioch\",\"state\":\"TN\",\"zip\":\"37013\"}",
-                "36.048391",
-                "-86.657027",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            21,
-            "5DCD07BC-EB89-4BA1-B018-DE71DAAF1F1D",
-            21,
-            1460956963,
-            "926011",
-            1462196255,
-            "926011",
-            null,
-            "Watkins Park",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/loc_wp_int.jpg",
-                "View Photo"
-            ],
-            "615-862-5872",
-            "#19, #25",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "CLOSED for renovation until June 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"612 17th Avenue North\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37203\"}",
-                "36.16275",
-                "-86.80084",
-                null,
-                false
-            ]
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "8:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 7,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195722,
+        ":created_meta": "926011",
+        ":id": "FDED848C-EE77-4C39-B2EF-FBAEED1B3DDA",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-880-3957",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_EP.jpg",
+            "View Photo"
         ],
-        [
-            12,
-            "C82A10F2-3C2F-49C9-A267-43CD44D176C8",
-            12,
-            1460956963,
-            "926011",
-            1462195971,
-            "926011",
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#37, #72",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 7,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "CLOSED for renovation until May 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Goodlettsville",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"205 Rivergate Parkway\",\"city\":\"Goodlettsville\",\"state\":\"TN\",\"zip\":\"37072\"}",
+            "36.314643",
+            "-86.709932",
             null,
-            "Inglewood",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_ING.jpg",
-                "View Photo"
-            ],
-            "615-862-5866",
-            "#26 Local, #56 BRT",
-            "10:00AM",
-            "6:00 PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            " ",
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"4312 Gallatin Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37216\"}",
-                "36.225814",
-                "-86.725447",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            13,
-            "126F1E44-D6F7-4E66-9A3F-A863738832DF",
-            13,
-            1460956963,
-            "926011",
-            1462196007,
-            "926011",
-            null,
-            "Looby",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_LO.jpg",
-                "View Photo"
-            ],
-            "615-862-5867",
-            "#9",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"2301 Rosa L. Parks Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37228\"}",
-                "36.193625",
-                "-86.808126",
-                null,
-                false
-            ]
+        "friday_opening_time": null,
+        "seed_exchange": "Yes",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 8,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195787,
+        ":created_meta": "926011",
+        ":id": "92B0B2A4-355F-4F09-B356-C1F79AF24915",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5862",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/loc_go_new_small.jpg",
+            "View Photo"
         ],
-        [
-            14,
-            "143B9238-771D-46BF-BD73-5A469952B0E1",
-            14,
-            1460956963,
-            "926011",
-            1462196035,
-            "926011",
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": null,
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 8,
+        "restrooms": "Yes",
+        "sunday_opening_time": " ",
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday. Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Green Hills",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"3701 Benham Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37215\"}",
+            "36.109283",
+            "-86.808739",
             null,
-            "Madison",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/loc_ma.jpg",
-                "View Photo"
-            ],
-            "615-862-5868",
-            "#26, #56, #76",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "5:00 PM",
-            "2:00PM",
-            "5:00PM",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"610 Gallatin Pike South\",\"city\":\"Madison\",\"state\":\"TN\",\"zip\":\"37115\"}",
-                "36.257054",
-                "-86.714041",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            15,
-            "8FB8A761-CE1E-4440-BBB1-D1F70F95D5EB",
-            15,
-            1460956963,
-            "926011",
-            1462196052,
-            "926011",
-            null,
-            "North",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_NO.jpg",
-                "View Photo"
-            ],
-            "615-862-5858",
-            "#29, #42",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"1001 Monroe Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
-                "36.174413",
-                "-86.795942",
-                null,
-                false
-            ]
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "8:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 9,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195836,
+        ":created_meta": "926011",
+        ":id": "3255CA01-DD07-4F93-A28C-576DEF789EC6",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5863",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_GH.jpg",
+            "View Photo"
         ],
-        [
-            16,
-            "DEC042CB-5973-4BC0-89A4-9770FFD4DFC0",
-            16,
-            1460956963,
-            "926011",
-            1462196065,
-            "926011",
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#7",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 9,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "8:00PM",
+        ":meta": "{\"invalidCells\":{\"library_photo_url\":\"loc_go_new_small\"}}",
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Hadley Park",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"1039 28th Ave., North\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
+            "36.166888",
+            "-86.820526",
             null,
-            "Old Hickory",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_OH.jpg",
-                "View Photo"
-            ],
-            "615-862-5869",
-            "#27",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"1010 Jones Street\",\"city\":\"Old Hickokry\",\"state\":\"TN\",\"zip\":\"37138\"}",
-                "36.260014",
-                "-86.645958",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            17,
-            "1961D895-8A6F-4B0E-A3C3-E321C64619F6",
-            17,
-            1460956963,
-            "926011",
-            1462196082,
-            "926011",
-            null,
-            "Pruitt",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_PR.jpg",
-                "View Photo"
-            ],
-            "615-862-5985",
-            "#25",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            "10:00AM",
-            "6:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"117 Charles E. Davis Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37210\"}",
-                "36.151725",
-                "-86.762036",
-                null,
-                false
-            ]
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00 PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 10,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195907,
+        ":created_meta": "926011",
+        ":id": "F82AB7EA-9C22-473A-9700-C3E6A585314E",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5865",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_HP.jpg",
+            "View Photo"
         ],
-        [
-            18,
-            "EBD40580-622A-4880-8158-7C5EB88AB85D",
-            18,
-            1460956963,
-            "926011",
-            1462196100,
-            "926011",
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#29",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 10,
+        "restrooms": "Yes",
+        "sunday_opening_time": " ",
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Hermitage ",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"3700 James Kay Lane\",\"city\":\"Hermitage\",\"state\":\"TN\",\"zip\":\"370706\"}",
+            "36.177515",
+            "-86.61674",
             null,
-            "Richland Park",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/LOC_RP.jpg",
-                "View Photo"
-            ],
-            "615-862-5870",
-            "#10",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            null,
-            null,
-            "10:00AM",
-            "5:00 PM",
-            null,
-            null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"4711 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37209\"}",
-                "36.152105",
-                "-86.84438",
-                null,
-                false
-            ]
+            false
         ],
-        [
-            20,
-            "0203A203-74D2-436A-BDC9-1C2D8A745A68",
-            20,
-            1460956963,
-            "926011",
-            1462196211,
-            "926011",
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "No",
+        "monday_closing_time": "8:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 11,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195939,
+        ":created_meta": "926011",
+        ":id": "DBFBF367-BB79-4576-B02D-DDD5FBF054F3",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-880-3951",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_HM.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#6",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 11,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "8:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Southeast ",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"5260 Hickory Hollow Parkway\",\"city\":\"Antioch\",\"state\":\"TN\",\"zip\":\"37013\"}",
+            "36.048391",
+            "-86.657027",
             null,
-            "Thompson Lane",
-            [
-                "http://dataimages.nashville.gov/Metro_Libraries/loc_tl_int.jpg",
-                "View Photo"
-            ],
-            "615-862-5873",
-            "#12",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
-            "10:00AM",
-            "6:00PM",
-            "12:00PM",
-            "8:00PM",
+            false
+        ],
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "Yes",
+        "monday_closing_time": "8:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 19,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196140,
+        ":created_meta": "926011",
+        ":id": "705A5ABF-EBF9-482B-89D2-82EAA0400749",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5871",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/SE_exterior.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#15, #55 BRT",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 19,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "8:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Watkins Park",
+        ":created_at": 1460956963,
+        "saturday_opening_time": null,
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"612 17th Avenue North\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37203\"}",
+            "36.16275",
+            "-86.80084",
             null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 21,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196255,
+        ":created_meta": "926011",
+        ":id": "5DCD07BC-EB89-4BA1-B018-DE71DAAF1F1D",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5872",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/loc_wp_int.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#19, #25",
+        "studio_npl": "No",
+        "saturday_closing_time": null,
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 21,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "CLOSED for renovation until June 2016\nCall library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "No",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Inglewood",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"4312 Gallatin Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37216\"}",
+            "36.225814",
+            "-86.725447",
             null,
-            "10:00AM",
-            "5:00 PM",
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "Yes",
+        "monday_closing_time": "6:00 PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 12,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462195971,
+        ":created_meta": "926011",
+        ":id": "C82A10F2-3C2F-49C9-A267-43CD44D176C8",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5866",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_ING.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#26 Local, #56 BRT",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 12,
+        "restrooms": "Yes",
+        "sunday_opening_time": " ",
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Looby",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"2301 Rosa L. Parks Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37228\"}",
+            "36.193625",
+            "-86.808126",
             null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 13,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196007,
+        ":created_meta": "926011",
+        ":id": "126F1E44-D6F7-4E66-9A3F-A863738832DF",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5867",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_LO.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#9",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 13,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Madison",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"610 Gallatin Pike South\",\"city\":\"Madison\",\"state\":\"TN\",\"zip\":\"37115\"}",
+            "36.257054",
+            "-86.714041",
             null,
-            "Yes",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Yes",
-            "No",
-            "Yes",
-            "No",
-            "No",
-            "Yes",
-            "Yes",
-            "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
-            [
-                "{\"address\":\"380 Thompson Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
-                "36.110801",
-                "-86.743292",
-                null,
-                false
-            ]
-        ]
-    ]
-}
+            false
+        ],
+        "friday_opening_time": "10:00AM",
+        "seed_exchange": "No",
+        "monday_closing_time": "8:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 14,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196035,
+        ":created_meta": "926011",
+        ":id": "143B9238-771D-46BF-BD73-5A469952B0E1",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "Yes",
+        "phone_number": "615-862-5868",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/loc_ma.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": "5:00PM",
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#26, #56, #76",
+        "studio_npl": "Yes",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 14,
+        "restrooms": "Yes",
+        "sunday_opening_time": "2:00PM",
+        "friday_closing_time": "6:00PM",
+        "thursday_closing_time": "8:00PM",
+        "notes": "Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "8:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "North",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"1001 Monroe Street\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37208\"}",
+            "36.174413",
+            "-86.795942",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 15,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196052,
+        ":created_meta": "926011",
+        ":id": "8FB8A761-CE1E-4440-BBB1-D1F70F95D5EB",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5858",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_NO.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#29, #42",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 15,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Old Hickory",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"1010 Jones Street\",\"city\":\"Old Hickokry\",\"state\":\"TN\",\"zip\":\"37138\"}",
+            "36.260014",
+            "-86.645958",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 16,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196065,
+        ":created_meta": "926011",
+        ":id": "DEC042CB-5973-4BC0-89A4-9770FFD4DFC0",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5869",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_OH.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#27",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 16,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Pruitt",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"117 Charles E. Davis Boulevard\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37210\"}",
+            "36.151725",
+            "-86.762036",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "6:00PM",
+        "books_and_materials": "Yes",
+        ":position": 17,
+        "thursday_opening_time": "10:00AM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196082,
+        ":created_meta": "926011",
+        ":id": "1961D895-8A6F-4B0E-A3C3-E321C64619F6",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5985",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_PR.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "10:00AM",
+        "bus_route": "#25",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 17,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "6:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Richland Park",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"4711 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37209\"}",
+            "36.152105",
+            "-86.84438",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 18,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196100,
+        ":created_meta": "926011",
+        ":id": "EBD40580-622A-4880-8158-7C5EB88AB85D",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5870",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/LOC_RP.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#10",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 18,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "Yes",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    },
+    {
+        "library_name": "Thompson Lane",
+        ":created_at": 1460956963,
+        "saturday_opening_time": "10:00AM",
+        "art_gallery": "No",
+        "mapped_location": [
+            "{\"address\":\"380 Thompson Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"37211\"}",
+            "36.110801",
+            "-86.743292",
+            null,
+            false
+        ],
+        "friday_opening_time": null,
+        "seed_exchange": "No",
+        "monday_closing_time": "6:00PM",
+        "tuesday_closing_time": "8:00PM",
+        "books_and_materials": "Yes",
+        ":position": 20,
+        "thursday_opening_time": "12:00PM",
+        "copy_machines": "Yes",
+        "conference_center": "No",
+        ":updated_at": 1462196211,
+        ":created_meta": "926011",
+        ":id": "0203A203-74D2-436A-BDC9-1C2D8A745A68",
+        "wednesday_opening_time": "10:00AM",
+        "public_computers": "Yes",
+        "group_study_rooms": "No",
+        "phone_number": "615-862-5873",
+        "library_photo_url": [
+            "http://dataimages.nashville.gov/Metro_Libraries/loc_tl_int.jpg",
+            "View Photo"
+        ],
+        "sunday_closing_time": null,
+        "tuesday_opening_time": "12:00PM",
+        "bus_route": "#12",
+        "studio_npl": "No",
+        "saturday_closing_time": "5:00 PM",
+        "story_times": "Yes",
+        "monday_opening_time": "10:00AM",
+        "downloadable_materials": "Yes",
+        "public_internet": "Yes",
+        ":updated_meta": "926011",
+        ":sid": 20,
+        "restrooms": "Yes",
+        "sunday_opening_time": null,
+        "friday_closing_time": null,
+        "thursday_closing_time": "8:00PM",
+        "notes": "Closed on Friday and Sunday.  Call library to confirm hours on holidays and in the event of severe weather.",
+        "streaming_materials": "Yes",
+        "wednesday_closing_time": "6:00PM",
+        ":meta": null,
+        "meeting_rooms": "No",
+        "book_drop": "Yes",
+        "wireless": "Yes"
+    }
+]
