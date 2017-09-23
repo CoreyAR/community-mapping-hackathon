@@ -55,6 +55,14 @@ var _RootMap = React.createClass({
         center={null}
         mapStyles={mapStyles}
       >
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          style={{zIndex: 5000}}
+        >
+          <div>
+          </div>
+          </InfoWindow>
         {
           parksData.map((p, i) => {
             this.state.points.push({key: 'park', lat: p.mapped_location[1],lng: p.mapped_location[2]})
@@ -99,7 +107,6 @@ var _RootMap = React.createClass({
           weights={{bustop: 0.1 , park: 4, grocery: 15}}
         />
       </Map>
-
     )
   }
 })

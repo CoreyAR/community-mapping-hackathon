@@ -14,8 +14,7 @@ class App extends Component {
           </div>
           <a href="https://github.com/CoreyAR/community-mapping-hackathon"><img src={require('./Images/github-logo.png')} className="App-logo" alt="logo" /></a>
         </div>
-        <RootMap>
-        </RootMap>
+        <RootMap />
       </div>
     );
   }
