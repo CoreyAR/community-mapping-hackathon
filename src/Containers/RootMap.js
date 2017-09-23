@@ -1,6 +1,6 @@
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, HeatmapOverlay} from '../Components/Map'
+import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../Data/parks'
