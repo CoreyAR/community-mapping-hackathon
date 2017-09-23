@@ -4,16 +4,7 @@ import {API_KEY} from './../env'
 import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/map'
 import Sidebar from '../components/sidebar'
 import mapStyles from './Styles/RootMapStyle'
-// Data sets
-import parksData from '../data/parks'
-import bustStopData from '../data/bus-stop'
-import clinicData from '../data/clinics'
 
-// Marker Logos
-import parksMarker from '../images/park-marker.png'
-import globeMarker from '../images/globe.png'
-import busMarker from '../images/bus_pointer.png'
-import clinicMarker from '../images/clinic-marker.png'
 
 const Home = React.createClass({
   getInitialState () {
@@ -109,7 +100,7 @@ const Home = React.createClass({
                 <Marker
                   key={Math.random()}
                   position={{lat: parseFloat(m.mapped_location[1]), lng: parseFloat(m.mapped_location[2])}}
-                  icon={parksMarker}
+                  icon={to.icon}
                 />
               )})
             })

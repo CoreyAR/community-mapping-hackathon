@@ -1,6 +1,6 @@
 // Data sets
 import parks from '../data/parks'
-import busStop from '../data/bus-stop'
+import busStop from '../data/bus-stops'
 import clinics from '../data/clinics'
 import libraries from '../data/libraries'
 
@@ -23,7 +23,7 @@ class DataManager {
     this.dataSets.map((d, idx) => {
       this.data[this.keys[idx]] = {
         list: d,
-        marker: this.icons[idx],
+        icon: this.icons[idx],
         weight: this.weights[idx]
       }
     })
