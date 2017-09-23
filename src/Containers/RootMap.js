@@ -5,10 +5,12 @@ import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../Data/parks'
 import bustStopData from '../Data/bus-stop'
+import clinicData from '../Data/clinics'
 // Marker Logos
 import parksMarker from '../Images/park-marker.png'
 import globeMarker from '../Images/globe.png'
 import busMarker from '../Images/bus_pointer.png'
+import clinicMarker from '../Images/clinic-marker.png'
 
 var _RootMap = React.createClass({
   getInitialState () {
@@ -94,12 +96,25 @@ var _RootMap = React.createClass({
             )            
           })
         }
+        {
+          clinicData.data.map((c,i) => {
+            this.state.points.push({key: 'clinic', lat: c[11][1], lng: c[11][2] })
+            return(
+              <Marker
+                key={Math.random()}
+                position={{lat: parseInt(c[11][1]), lng: parseInt(c[11[2]])}}
+                onClick={this.onMarkerClick}
+                icon={clinicMarker}
+              />
+            )
+          })
+        }
         <HeatmapOverlay
           points={this.state.points}
-          weights={{bustop: 0.1 , park: 4, grocery: 15}}
+          weights={{bustop: 0.1 , park: 4, grocery: 15, clinic: 10}}
         />
       </Map>
-
+    
     )
   }
 })
