@@ -102,7 +102,7 @@ var _RootMap = React.createClass({
             return(
               <Marker
                 key={Math.random()}
-                position={{lat: parseInt(c[11][1]), lng: parseInt(c[11[2]])}}
+                position={{lat: parseFloat(c[11][1]), lng: parseFloat(c[11][2])}}
                 onClick={this.onMarkerClick}
                 icon={clinicMarker}
               />
