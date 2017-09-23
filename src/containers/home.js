@@ -5,6 +5,8 @@ import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../comp
 import Sidebar from '../components/sidebar'
 import mapStyles from './Styles/RootMapStyle'
 
+import DataManager from '../helpers/data'
+
 
 const Home = React.createClass({
   getInitialState () {
@@ -17,8 +19,14 @@ const Home = React.createClass({
 
       // New
       toggledOn: [],
-      weights: {}
+      weights: {},
+      markerData: []
     }
+  },
+
+  fetchData() {
+    const dataManager = new DataManager(this.props.google)
+    this.setState({markerData: dataManager.markerData})
   },
 
   fetchPlaces: function(mapProps, map) {
@@ -51,8 +59,7 @@ const Home = React.createClass({
   calculateWeights () {
     let weights = {}
     this.state.toggledOn.map((t) => {
-      weights[t] = this.props.markerData[t].weight
-      
+      weights[t] = this.state.markerData[t].weight
     })
     return weights
   },
@@ -72,11 +79,11 @@ const Home = React.createClass({
       <div>
       <Sidebar
         toggleMarkers={this.toggleMarkers}
-        markerKeys={Object.keys(this.props.markerData)}
+        markerKeys={Object.keys(this.state.markerData)}
       />
       <Map
         style={style}
-        onReady={this.fetchPlaces}
+        onReady={this.fetchData}
         google={this.props.google}
         zoom={14}
         initialCenter={{lat: 36.1639,lng: -86.7817}}
@@ -94,7 +101,7 @@ const Home = React.createClass({
 
           {
             this.state.toggledOn.map((to) => {
-              return this.props.markerData[to].list.map((m) => {
+              return this.state.markerData[to].list.map((m) => {
               this.state.points.push({key: to, lat: m.mapped_location[1],lng: m.mapped_location[2]})
                 return (
                 <Marker

@@ -6,12 +6,15 @@ import libraries from '../data/libraries'
 
 export const toggleList = { 'busStop': {}, 'parks': {}, 'internationalGroceryStores': {} }
 class DataManager {
-  constructor() {
+
+  constructor(google) {
     this.dataSets = [parks, busStop, clinics, libraries]
     this.icons = [require('../images/park-marker.png'), require('../images/bus_pointer.png'), require('../images/clinic_icon.png'), require('../images/library-icon.png')]
     this.weights = [4 , 0.1, 6, 5]
     this.keys = ['parks', 'busStop','clinics', 'libraries']
     this.data = {}
+    console.log('google', google)
+    this.google = google
   }
 
   get markerData() {
