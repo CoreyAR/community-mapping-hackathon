@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../../App.css';
 import Toggle from 'material-ui/Toggle';
 import { toggleList } from '../../helpers/data'
-console.log(toggleList)
+
 const style = {
   position: 'absolute',
   top: '90px',
@@ -34,8 +34,6 @@ class Sidebar extends Component {
               labelStyle={{color: 'white'}}
             />
         )}
-
-        
       </div>
     );
   }

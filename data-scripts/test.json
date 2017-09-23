@@ -1,0 +1,82 @@
+[
+    {
+        ":created_at": 1449670757,
+        ":updated_at": 1454489690,
+        ":created_meta": "926011",
+        "mapped_location": [
+            "{\"address\":\"2500 Charlotte Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "36.155043",
+            "-86.812991",
+            null,
+            false
+        ],
+        "clinic_name": "Lentz Public Health Center",
+        "hours": "Monday - Friday 8:00 am until 4:30 pm",
+        "phone": "(615) 340-5616",
+        ":id": "BAE9246F-111A-47B8-A3A8-6F8C2AF62311",
+        ":meta": null,
+        ":updated_meta": "926011",
+        ":sid": 1,
+        ":position": 1
+    },
+    {
+        ":created_at": 1449670757,
+        ":updated_at": 1454489711,
+        ":created_meta": "926011",
+        "mapped_location": [
+            "{\"address\":\"1015 East Trinity Lane\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "36.204273",
+            "-86.745286",
+            null,
+            false
+        ],
+        "clinic_name": "East Public Health Center",
+        "hours": "Monday - Friday 7:30 am until 4:30 pm",
+        "phone": "(615) 862-7916",
+        ":id": "43001A7B-92C7-49D7-A9FA-F3445C6B9C1F",
+        ":meta": null,
+        ":updated_meta": "926011",
+        ":sid": 2,
+        ":position": 2
+    },
+    {
+        ":created_at": 1449670757,
+        ":updated_at": 1454489720,
+        ":created_meta": "926011",
+        "mapped_location": [
+            "{\"address\":\"224 Oriel Avenue\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "36.122097",
+            "-86.743627",
+            null,
+            false
+        ],
+        "clinic_name": "Woodbine Public Health Center",
+        "hours": "Monday - Friday 7:00 am until 4:30 pm",
+        "phone": "(615) 862-7940",
+        ":id": "972327DD-0A25-44AF-8745-8B8DA7941FA8",
+        ":meta": null,
+        ":updated_meta": "926011",
+        ":sid": 4,
+        ":position": 4
+    },
+    {
+        ":created_at": 1449670757,
+        ":updated_at": 1454489728,
+        ":created_meta": "926011",
+        "mapped_location": [
+            "{\"address\":\"3718 Nolensville Pike\",\"city\":\"Nashville\",\"state\":\"TN\",\"zip\":\"\"}",
+            "36.093667",
+            "-86.736409",
+            null,
+            false
+        ],
+        "clinic_name": "South Nashville WIC Nutrition Center (WIC Only)",
+        "hours": "Monday \u2013 Thursday\u00a0 7:30 am \u2013 6:00 pm",
+        "phone": "(615) 880-3210",
+        ":id": "61C01FFF-83B9-4C11-8B60-FD06E8A986EE",
+        ":meta": null,
+        ":updated_meta": "926011",
+        ":sid": 3,
+        ":position": 3
+    }
+]

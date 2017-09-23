@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './containers/home'
+import DataManager from './helpers/data'
+const dm = new DataManager()
+console.log(dm.markersList)
 
 class App extends Component {
   render() {
