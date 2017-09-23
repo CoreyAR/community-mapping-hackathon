@@ -8,13 +8,12 @@ import mapStyles from './Styles/RootMapStyle'
 import parksData from '../data/parks'
 import bustStopData from '../data/bus-stop'
 import clinicData from '../data/clinics'
-import libraryData from '../data/libraries'
+
 // Marker Logos
 import parksMarker from '../images/park-marker.png'
 import globeMarker from '../images/globe.png'
 import busMarker from '../images/bus_pointer.png'
 import clinicMarker from '../images/clinic-marker.png'
-import libraryMarker from '../images/library-icon.png'
 
 const Home = React.createClass({
   getInitialState () {
@@ -124,20 +123,6 @@ const Home = React.createClass({
                 position={{lat: parseFloat(c[11][1]), lng: parseFloat(c[11][2])}}
                 onClick={this.onMarkerClick}
                 icon={clinicMarker}
-              />
-            )
-          })
-        }
-        {
-          libraryData.data.map((l,i) => {
-            console.log(l);
-            this.state.points.push({key: 'library', lat: l[43][1], lng: l[43][2] })
-            return(
-              <Marker
-                key={Math.random()}
-                position={{lat: parseFloat(l[43][1]), lng: parseFloat(l[43][2])}}
-                onClick={this.onMarkerClick}
-                icon={libraryMarker}
               />
             )
           })
