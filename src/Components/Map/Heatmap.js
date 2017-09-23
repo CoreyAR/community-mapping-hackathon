@@ -17,10 +17,27 @@ const wrappedPromise = function () {
 }
 
 export class HeatmapOverlay extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      points: []
+    }
+  }
+  componentWillReceiveProps (nextProps) {
+    let points = nextProps.points.filter(p => p.lat !== null && p.lng !== null)
+      .map((p) => {
+      return {location: new nextProps.google.maps.LatLng(p.lat, p.lng), weight: this.props.weights[p.key]}
+    })
+    this.setState({points})
+  }
+
+  componentDidUpdate () {
+    this.renderHeatmapOverlay()
+  }
 
   componentDidMount () {
     this.heatmapOverlayPromise = wrappedPromise()
-    this.renderHeatmapOverlay()
+    // this.renderHeatmapOverlay()
   }
 
   componentWillUnmount () {
@@ -29,33 +46,40 @@ export class HeatmapOverlay extends React.Component {
     }
   }
 
-  getPoints () {
-    return []
-  }
-
   renderHeatmapOverlay () {
     let {
-      map, google, imageBounds, image
+      map, google,
     } = this.props
     if (!google) {
       return null
     }
 
-  // let pos = position || mapCenter;
-    // if (!(pos instanceof google.maps.LatLng)) {
-    //   position = new google.maps.LatLng(pos.lat, pos.lng);
-    // }
+    const gradient = [
+      'rgba(0, 255, 255, 0)',
+      'rgba(0, 255, 255, 1)',
+      'rgba(0, 191, 255, 1)',
+      'rgba(0, 127, 255, 1)',
+      'rgba(0, 63, 255, 1)',
+      'rgba(0, 0, 255, 1)',
+      'rgba(0, 0, 223, 1)',
+      'rgba(0, 0, 191, 1)',
+      'rgba(0, 0, 159, 1)',
+      'rgba(0, 0, 127, 1)',
+      'rgba(63, 0, 91, 1)',
+      'rgba(127, 0, 63, 1)',
+      'rgba(191, 0, 31, 1)',
+      'rgba(255, 0, 0, 1)'
+    ]
 
     const pref = {
       map: map,
-      imageBounds: imageBounds,
-      image: image
+      data: this.state.points,
+      radius: 200,
+      opacity: 0.2,
+      gradient
     }
-    this.heatmapOverlay = new google.maps.visualization.HeatmapLayer({
-      data: this.getPoints(),
-      map: map
-    })
-    // new google.maps.HeatmapOverlay(pref.image, pref.imageBounds)
+    this.heatmapOverlay = new google.maps.visualization.HeatmapLayer(pref)
+
     this.heatmapOverlay.setMap(pref.map)
 
     evtNames.forEach(e => {

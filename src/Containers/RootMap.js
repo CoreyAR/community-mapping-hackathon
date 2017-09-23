@@ -1,6 +1,6 @@
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, InfoWindow, HeatmapOverlay} from '../Components/Map'
+import Map, {GoogleApiWrapper, Marker, HeatmapOverlay} from '../Components/Map'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../Data/parks'
@@ -16,15 +16,9 @@ var _RootMap = React.createClass({
       activeMarker: null,
       lat: 36.1639,
       lng: -86.7817,
-      internationalGrocery: []
+      internationalGrocery: [],
+      points: []
     }
-  },
-
-  componentWillReceiveProps (nextProps) {
-  },
-
-  componentDidUpdate(prevProps, prevState) {
-    
   },
 
   fetchPlaces: function(mapProps, map) {
@@ -34,14 +28,8 @@ var _RootMap = React.createClass({
     const service = new google.maps.places.PlacesService(map)
     service.textSearch(request, (results, status) => { 
       if  (status === this.props.google.maps.places.PlacesServiceStatus.OK) {
-        console.log(results)
         this.setState({internationalGrocery: results})
       }
-    })
-  },
-
-  onMarkerClick: function (props, marker, e) {
-    this.setState({
     })
   },
 
@@ -63,7 +51,7 @@ var _RootMap = React.createClass({
         onReady={this.fetchPlaces}
         google={this.props.google}
         zoom={14}
-        initialCenter={{lat: this.state.lat,lng: this.state.lng}}
+        initialCenter={{lat: 36.1639,lng: -86.7817}}
         center={null}
         mapStyles={mapStyles}
       >
@@ -77,6 +65,7 @@ var _RootMap = React.createClass({
           </InfoWindow>
         {
           parksData.map((p, i) => {
+            this.state.points.push({key: 'park', lat: p.mapped_location[1],lng: p.mapped_location[2]})
             return (
              <Marker
               key={Math.random()}
@@ -89,7 +78,7 @@ var _RootMap = React.createClass({
         }
         {
           this.state.internationalGrocery.map((groc, i) => {
-            console.log(groc.geometry.location.lat())
+            this.state.points.push({key:'grocery', lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()})
             return (
               <Marker
                 key={Math.random()}
@@ -102,6 +91,7 @@ var _RootMap = React.createClass({
         }
         {
           bustStopData.map((b, i) => {
+            this.state.points.push({key: 'bustop', lat: b.mapped_location.latitude, lng: b.mapped_location.longitude})
             return (
               <Marker
                 key={Math.random()}
@@ -113,12 +103,12 @@ var _RootMap = React.createClass({
           })
         }
         <HeatmapOverlay
+          points={this.state.points}
+          weights={{bustop: 0.1 , park: 4, grocery: 15}}
         />
       </Map>
     )
   }
 })
 
-export default GoogleApiWrapper({
-  apiKey: API_KEY, libraries: ['places']
-})(_RootMap)
+export default GoogleApiWrapper({ apiKey: API_KEY })(_RootMap)
