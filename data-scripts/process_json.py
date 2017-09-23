@@ -11,6 +11,7 @@ col = data['meta']['view']['columns']
 comp = []
 replace_field = False
 if not 'mapped_location' in col:
+    print(col)
     replace_field = raw_input("'mapped_location' not found in columns. Select a field to replace: ")
 for row in d:
     d = defaultdict()
