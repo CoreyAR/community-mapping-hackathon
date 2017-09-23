@@ -1,16 +1,18 @@
 // @flow
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/Map'
+import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/map'
 import Sidebar from '../components/sidebar'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
 import parksData from '../data/parks'
 import bustStopData from '../data/bus-stop'
+import clinicData from '../data/clinics'
 // Marker Logos
 import parksMarker from '../images/park-marker.png'
 import globeMarker from '../images/globe.png'
 import busMarker from '../images/bus_pointer.png'
+import clinicMarker from '../images/clinic-marker.png'
 
 const Home = React.createClass({
   getInitialState () {
@@ -109,6 +111,19 @@ const Home = React.createClass({
                 icon={busMarker}
               />
             )            
+          })
+        }
+        {
+          clinicData.data.map((c,i) => {
+            this.state.points.push({key: 'clinic', lat: c[11][1], lng: c[11][2] })
+            return(
+              <Marker
+                key={Math.random()}
+                position={{lat: parseFloat(c[11][1]), lng: parseFloat(c[11][2])}}
+                onClick={this.onMarkerClick}
+                icon={clinicMarker}
+              />
+            )
           })
         }
         <HeatmapOverlay
