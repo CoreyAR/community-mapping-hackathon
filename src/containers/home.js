@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/Map'
+import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/map'
 import Sidebar from '../components/sidebar'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
