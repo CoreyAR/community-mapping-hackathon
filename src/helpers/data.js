@@ -9,22 +9,24 @@ class DataManager {
     this.dataSets = [parks, busStop, clinics]
     this.icons = [require('../images/park-marker.png'), require('../images/bus_pointer.png'), require('../images/clinic_icon.png')]
     this.weights = [4 , 0.1, 6]
+    this.keys = ['parks', 'busStop','clinics']
+    this.data = {}
   }
 
-  get markersList() {
+  get markerData() {
     const toggleList = this.processDataSets()
     return toggleList
   }
 
   processDataSets() {
-    const processed = this.dataSets.map((d, idx) => {
-      return {
+    this.dataSets.map((d, idx) => {
+      this.data[this.keys[idx]] = {
         list: d,
         marker: this.icons[idx],
         weight: this.weights[idx]
       }
     })
-    return processed
+    return this.data
   }
 
 }

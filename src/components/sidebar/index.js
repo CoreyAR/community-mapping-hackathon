@@ -24,14 +24,14 @@ function formatTitle(title: string) {
 class Sidebar extends Component {
 
   render() {
-    console.log(this.props)
     return (
       <div className="sidebar" style={style}>
-        {Object.keys(toggleList).map((t) => 
+        {this.props.markerKeys.map((t, idx) => 
             <Toggle
               label={formatTitle(t)}
               onToggle={this.props.toggleMarkers.bind(this, t)}
               labelStyle={{color: 'white'}}
+              name={t}
             />
         )}
       </div>

@@ -22,7 +22,7 @@ const Home = React.createClass({
       points: [],
 
       // New
-      toggledon: []
+      toggledOn: []
     }
   },
 
@@ -38,8 +38,19 @@ const Home = React.createClass({
     })
   },
 
-  toggleMarkers(title, e) {
-    console.log(title, e.target.value)
+  toggleMarkers(t, e, on) {
+    console.log(t, on)
+    const idx = this.state.toggledOn.indexOf(t)
+    console.log('idx', idx)
+    if (on && idx < 0) {
+      console.log('on')
+      this.state.toggledOn.push(t)
+      this.setState({toggledOn: this.state.toggledOn})
+    } else if (!on && idx > 0) {
+      console.log('off')
+      this.state.toggledOn.slice(idx,1)
+      this.setState({toggledOn: this.state.toggledOn})
+    }
   },
 
   render () {
@@ -57,6 +68,7 @@ const Home = React.createClass({
       <div>
       <Sidebar
         toggleMarkers={this.toggleMarkers}
+        markerKeys={Object.keys(this.props.markerData)}
       />
       <Map
         style={style}
@@ -75,18 +87,20 @@ const Home = React.createClass({
           <div>
           </div>
           </InfoWindow>
-        {
-          parksData.map((p, i) => {
-            this.state.points.push({key: 'park', lat: p.mapped_location[1],lng: p.mapped_location[2]})
-            return (
-             <Marker
-              key={Math.random()}
-              position={{lat: parseFloat(p.mapped_location[1]), lng: parseFloat(p.mapped_location[2])}}
-              icon={parksMarker}
-             />
-            )
-          })
-        }
+
+          {
+            this.state.toggledOn.map((to) => {
+              return this.props.markerData[to].list.map((m) => {
+              this.state.points.push({key: 'park', lat: m.mapped_location[1],lng: m.mapped_location[2]})
+                return (
+                <Marker
+                  key={Math.random()}
+                  position={{lat: parseFloat(m.mapped_location[1]), lng: parseFloat(m.mapped_location[2])}}
+                  icon={parksMarker}
+                />
+              )})
+            })
+          }
         {
           this.state.internationalGrocery.map((groc, i) => {
             this.state.points.push({key:'grocery', lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()})
@@ -99,7 +113,7 @@ const Home = React.createClass({
             )
           })
         }
-        {
+        {/* {
           bustStopData.map((b, i) => {
             this.state.points.push({key: 'bustop', lat: b.mapped_location.latitude, lng: b.mapped_location.longitude})
             return (
@@ -110,7 +124,7 @@ const Home = React.createClass({
               />
             )            
           })
-        }
+        } */}
         <HeatmapOverlay
           points={this.state.points}
           weights={{bustop: 0.1 , park: 4, grocery: 15}}
