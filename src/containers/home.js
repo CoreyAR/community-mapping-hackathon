@@ -1,23 +1,28 @@
+// @flow
 import React from 'react'
 import {API_KEY} from './../env'
-import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../Components/Map'
+import Map, {GoogleApiWrapper, Marker, HeatmapOverlay, InfoWindow} from '../components/Map'
+import Sidebar from '../components/sidebar'
 import mapStyles from './Styles/RootMapStyle'
 // Data sets
-import parksData from '../Data/parks'
-import bustStopData from '../Data/bus-stop'
+import parksData from '../data/parks'
+import bustStopData from '../data/bus-stop'
 // Marker Logos
-import parksMarker from '../Images/park-marker.png'
-import globeMarker from '../Images/globe.png'
-import busMarker from '../Images/bus_pointer.png'
+import parksMarker from '../images/park-marker.png'
+import globeMarker from '../images/globe.png'
+import busMarker from '../images/bus_pointer.png'
 
-var _RootMap = React.createClass({
+const Home = React.createClass({
   getInitialState () {
     return {
       activeMarker: null,
       lat: 36.1639,
       lng: -86.7817,
       internationalGrocery: [],
-      points: []
+      points: [],
+
+      // New
+      toggledon: []
     }
   },
 
@@ -33,19 +38,26 @@ var _RootMap = React.createClass({
     })
   },
 
+  toggleMarkers(title, e) {
+    console.log(title, e.target.value)
+  },
+
   render () {
     const style = {
       position: 'absolute',
       top: '0',
       right: '0',
       bottom: '0',
-      left: '0',
+      left: '150px',
       width: '100%',
       height: '100%'
     }
 
     return (
-
+      <div>
+      <Sidebar
+        toggleMarkers={this.toggleMarkers}
+      />
       <Map
         style={style}
         onReady={this.fetchPlaces}
@@ -70,7 +82,6 @@ var _RootMap = React.createClass({
              <Marker
               key={Math.random()}
               position={{lat: parseFloat(p.mapped_location[1]), lng: parseFloat(p.mapped_location[2])}}
-              onClick={this.onMarkerClick}
               icon={parksMarker}
              />
             )
@@ -83,7 +94,6 @@ var _RootMap = React.createClass({
               <Marker
                 key={Math.random()}
                 position={{lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()}}
-                onClick={this.onMarkerClick}
                 icon={globeMarker}
              />
             )
@@ -96,7 +106,6 @@ var _RootMap = React.createClass({
               <Marker
                 key={Math.random()}
                 position={{lat: b.mapped_location.latitude , lng: b.mapped_location.longitude}}
-                onClick={this.onMarkerClick}
                 icon={busMarker}
               />
             )            
@@ -107,8 +116,9 @@ var _RootMap = React.createClass({
           weights={{bustop: 0.1 , park: 4, grocery: 15}}
         />
       </Map>
+      </div>
     )
   }
 })
 
-export default GoogleApiWrapper({ apiKey: API_KEY })(_RootMap)
+export default GoogleApiWrapper({ apiKey: API_KEY })(Home)
