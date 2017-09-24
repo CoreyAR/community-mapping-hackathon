@@ -19,13 +19,20 @@ const Home = React.createClass({
       activeMarker: null,
       lat: 36.1639,
       lng: -86.7817,
-      internationalGrocery: [],
       points: [],
 
       // New
       toggledOn: [],
       weights: {},
-      markerData: []
+      markerData: {}
+    }
+  },
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log('{nextProps, nextState}')
+    if (nextState.markerData.loading != this.state.markerData.loading) {
+      console.log('~~~~~~',this.state.markerData.loading, nextState.markerData.loading, this.state.markerData)
+      this.forceUpdate()
     }
   },
 
@@ -33,18 +40,6 @@ const Home = React.createClass({
     const dataManager = new DataManager(this.props.google, map)
     var md = await  dataManager.markerData()
     this.setState({markerData: md})
-  },
-
-  fetchPlaces: function(mapProps, map) {
-    const {google} = this.props;
-    let location = new google.maps.LatLng(this.state.lat, this.state.lng);
-    const request = {query: 'world international market grocery store', location}
-    const service = new google.maps.places.PlacesService(map)
-    service.textSearch(request, (results, status) => { 
-      if  (status === this.props.google.maps.places.PlacesServiceStatus.OK) {
-        this.setState({markerData:  {internationalGrocery: {results}, ...this.state.markerData}})
-      }
-    })
   },
 
   toggleMarkers(t, e, on) {
@@ -81,16 +76,17 @@ const Home = React.createClass({
       width: '100%',
       height: '100%'
     }
-
+    console.log('render', Object.keys(this.state.markerData), this.state.markerData,)
     return (
       <div>
       <Sidebar
         toggleMarkers={this.toggleMarkers}
-        markerKeys={Object.keys(this.state.markerData)}
+        markerKeys={this.state.markerData}
+        loading={this.state.markerData.loading}
       />
       <Map
         style={style}
-        onReady={this.fetchPlaces}
+        onReady={this.fetchData}
         google={this.props.google}
         zoom={14}
         initialCenter={{lat: 36.1639,lng: -86.7817}}
@@ -119,18 +115,6 @@ const Home = React.createClass({
               )})
             })
           }
-        {/* {
-          this.state.internationalGrocery.map((groc, i) => {
-            this.state.points.push({key:'grocery', lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()})
-            return (
-              <Marker
-                key={Math.random()}
-                position={{lat: groc.geometry.location.lat(), lng: groc.geometry.location.lng()}}
-                icon={globeMarker}
-             />
-            )
-          })
-        } */}
         <HeatmapOverlay
           points={this.state.points}
           weights={this.state.weights}
