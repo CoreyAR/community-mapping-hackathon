@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import '../../App.css';
 import Toggle from 'material-ui/Toggle';
-import { toggleList } from '../../helpers/data'
-import styles from './style.css'
+
 const style = {
   position: 'absolute',
   top: '90px',
@@ -21,35 +20,22 @@ function formatTitle(title: string) {
 }
 
 class Sidebar extends Component {
-
-    componentWillUpdate(nextProps, nextState) {
-    // console.log({nextProps, nextState})
-    console.log('we changed')
-    if (nextProps.loading != this.props.loading) {
-      console.log('----',this.props.loading, nextProps.loading)
-      this.forceUpdate()
-    }
-  }
-
-  renderloading() {
-    if (this.props.loading) {
-      return <div class="sk-circle12 sk-circle"></div>
-    }
-  }
+  
   render() {
     return (
       <div className="sidebar" style={style}>
-        {Object.keys(this.props.markerKeys).map((t, idx) =>{ 
-          if (t !== 'loading')
-              return <Toggle
-              key={t}
-              label={formatTitle(t)}
-              onToggle={this.props.toggleMarkers.bind(this, t)}
-              labelStyle={{color: 'white'}}
-              name={t}
-            />}
+        {Object.keys(this.props.markerData).map((t, idx) =>{ 
+              return (
+              <Toggle
+                key={t}
+                label={formatTitle(t)}
+                onToggle={this.props.toggleMarkers.bind(this, t)}
+                labelStyle={{color: 'white'}}
+                name={t}
+              />
+            )
+          }
         )}
-        {this.renderloading()}
       </div>
     );
   }

@@ -4,14 +4,16 @@ import busStop from '../data/bus-stop'
 import clinics from '../data/clinics'
 import libraries from '../data/libraries'
 
-export const toggleList = { 'busStop': {}, 'parks': {}, 'internationalGroceryStores': {} }
 class DataManager {
   constructor(google, map) {
-    this.dataSets = [parks, busStop, clinics, libraries]
-    this.icons = [require('../images/park-marker.png'), require('../images/bus_pointer.png'), require('../images/clinic_icon.png'), require('../images/library-icon.png')]
-    this.weights = [4 , 0.1, 6, 5]
+    this.dataSets = {
+      parks:{marker: require('../images/park-marker.png'), weight: 4, list: parks}, 
+      busStop:{marker: require('../images/bus_pointer.png'), weight: 0.75, list: busStop},
+      clinics:{marker: require('../images/clinic_icon.png'), weight: 6, list: clinics},
+      libraries:{marker: require('../images/library-icon.png'), weight: 5, list: libraries}
+    }
     this.keys = ['parks', 'busStop','clinics', 'libraries']
-    this.data = {loading: true}
+    this.data = {'parks': null, 'busStop': null,'clinics': null, 'libraries': null, 'internationalGrocery': null}
     this.google = google
     this.googleQueries = [{ key: 'internationalGrocery', query: 'world international market grocery store', marker: '../images/globe.png', weight: 6 }]
     this.map = map
@@ -43,16 +45,15 @@ class DataManager {
         }
       })
     })
-    this.data.loading = false
   }
 
   processDataSets() {
-    this.dataSets.map((d, idx) => {
-      this.data[this.keys[idx]] = {
-        list: d,
-        marker: this.icons[idx],
-        weight: this.weights[idx]
-      }
+    /* 
+    * This is simply taking the datasets and setting them on this.data. It is implemented 
+    * It is implemented like this in case any additional work needs to be done.
+    */
+    Object.keys(this.dataSets).map((key) => {
+      this.data[key] = this.dataSets[key]
     })
     this.processGoogleDataSets()
     return this.data

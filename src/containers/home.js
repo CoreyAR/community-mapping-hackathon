@@ -28,17 +28,9 @@ const Home = React.createClass({
     }
   },
 
-  componentWillUpdate(nextProps, nextState) {
-    console.log('{nextProps, nextState}')
-    if (nextState.markerData.loading != this.state.markerData.loading) {
-      console.log('~~~~~~',this.state.markerData.loading, nextState.markerData.loading, this.state.markerData)
-      this.forceUpdate()
-    }
-  },
-
-  async fetchData(mapProps, map) {
+  fetchData(mapProps, map) {
     const dataManager = new DataManager(this.props.google, map)
-    var md = await  dataManager.markerData()
+    const md = dataManager.markerData()
     this.setState({markerData: md})
   },
 
@@ -76,13 +68,12 @@ const Home = React.createClass({
       width: '100%',
       height: '100%'
     }
-    console.log('render', Object.keys(this.state.markerData), this.state.markerData,)
+    
     return (
       <div>
       <Sidebar
         toggleMarkers={this.toggleMarkers}
-        markerKeys={this.state.markerData}
-        loading={this.state.markerData.loading}
+        markerData={this.state.markerData}
       />
       <Map
         style={style}
