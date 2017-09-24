@@ -1,8 +1,8 @@
 import json
 from collections import defaultdict
-file = './rows.json'
+in_file = raw_input("File to process: ")
 
-jsonfile = open(file, 'r')
+jsonfile = open(in_file, 'r')
 data = json.load(jsonfile)
 
 d = data['data']
