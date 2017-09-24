@@ -1,22 +1,26 @@
 // Data sets
-import parks from '../data/parks'
-import busStop from '../data/bus-stops'
-import clinics from '../data/clinics'
-import libraries from '../data/libraries'
+import request from 'request'
 
 class DataManager {
   constructor(google, map) {
-    this.dataSets = {
-      parks:{marker: require('../images/park-marker.png'), weight: 4, list: parks}, 
-      busStop:{marker: require('../images/bus_pointer.png'), weight: 0.75, list: busStop},
-      clinics:{marker: require('../images/clinic_icon.png'), weight: 6, list: clinics},
-      libraries:{marker: require('../images/library-icon.png'), weight: 5, list: libraries}
+    this.data = {
+      'parks': {marker: require('../images/park-marker.png'), weight: 4, list: null}, 
+      'busStop': {marker: require('../images/bus_pointer.png'), weight: 0.75, list: null},
+      'clinics': {marker: require('../images/clinic_icon.png'), weight: 6, list: null}, 
+      'libraries': {marker: require('../images/library-icon.png'), weight: 5, list: null},
+      'internationalGrocery': null, 
+      'beerPermits': {marker: require('../images/beer.png'), weight: 2, list: null}
     }
-    this.keys = ['parks', 'busStop','clinics', 'libraries']
-    this.data = {'parks': null, 'busStop': null,'clinics': null, 'libraries': null, 'internationalGrocery': null}
     this.google = google
-    this.googleQueries = [{ key: 'internationalGrocery', query: 'world international market grocery store', marker: '../images/globe.png', weight: 6 }]
+    this.googleQueries = [{ key: 'internationalGrocery', query: 'world international market grocery store', marker: require('../images/globe.png'), weight: 6 }]
     this.map = map
+    this.sodaEndpoints = [
+      {key: 'parks', url: 'https://data.nashville.gov/resource/xbru-cfzi.geojson'},
+      {key: 'busStop', url: 'https://data.nashville.gov/resource/8v95-enfj.geojson'},
+      {key: 'libraries', url: 'https://data.nashville.gov/resource/9fjy-9ky5.geojson'},
+      {key: 'beerPermits', url: 'https://data.nashville.gov/resource/p4jz-kk7d.geojson'},
+      {key: 'clinics', url: 'https://data.nashville.gov/resource/nh2d-pe3e.geojson'}
+    ]
   }
 
   markerData() {
@@ -34,7 +38,7 @@ class DataManager {
         if  (status === google.maps.places.PlacesServiceStatus.OK) {
           const processed_results = results.map((r)=> {
             let loc = r.geometry.location
-            r.mapped_location = [null, loc.lat(), loc.lng()]
+            r.geometry.coordinates = [loc.lng(),loc.lat()]
             return r
           })
           this.data[g.key] = {
@@ -47,14 +51,24 @@ class DataManager {
     })
   }
 
-  processDataSets() {
-    /* 
-    * This is simply taking the datasets and setting them on this.data. It is implemented 
-    * It is implemented like this in case any additional work needs to be done.
-    */
-    Object.keys(this.dataSets).map((key) => {
-      this.data[key] = this.dataSets[key]
+  processSodaData () {
+    this.sodaEndpoints.map((soda) => {
+      this.fetchSodaData(soda.url, soda.key)
     })
+  }
+  
+  fetchSodaData(url, key) {
+    request(url, this.addToData.bind(this, key))
+  }
+
+  addToData(key, error, response, body) {
+    let data = JSON.parse(body).features
+    const mapped_data = data.filter((d)=> d.geometry)
+    this.data[key].list = mapped_data
+  }
+
+  processDataSets() {
+    this.processSodaData()
     this.processGoogleDataSets()
     return this.data
   }

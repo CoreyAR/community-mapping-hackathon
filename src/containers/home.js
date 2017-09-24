@@ -90,11 +90,11 @@ const Home = React.createClass({
           {
             this.state.toggledOn.map((to) => {
               return this.state.markerData[to].list.map((m) => {
-              this.state.points.push({key: to, lat: m.mapped_location[1],lng: m.mapped_location[2]})
+              this.state.points.push({key: to, lat: m.geometry.coordinates[1],lng: m.geometry.coordinates[0]})
                 return (
                 <Marker
                   key={Math.random()}
-                  position={{lat: parseFloat(m.mapped_location[1]), lng: parseFloat(m.mapped_location[2])}}
+                  position={{lat: m.geometry.coordinates[1], lng: m.geometry.coordinates[0]}}
                   icon={this.state.markerData[to].marker}
                 />
               )})

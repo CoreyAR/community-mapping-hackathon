@@ -22,6 +22,7 @@ function formatTitle(title: string) {
 class Sidebar extends Component {
   
   render() {
+    console.log(this.props.markerData)
     return (
       <div className="sidebar" style={style}>
         {Object.keys(this.props.markerData).map((t, idx) =>{ 
